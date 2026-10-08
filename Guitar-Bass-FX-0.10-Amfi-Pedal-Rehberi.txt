@@ -1,0 +1,48 @@
+GUITAR & BASS FX — AMFİ, KABİN VE GENİŞLETİLMİŞ PEDALBOARD
+9 Ekim 2026 · Android 0.10 / Windows 0.5
+
+NE EKLENDİ?
+8 pedal modeli: 3 bant EQ, kompresör, overdrive, chorus, delay, oda reverb, Synth VA ve Synth FM.
+7 amfi karakteri: bas temiz/drive; elektro temiz/crunch/high gain; akustik ve klasik preamp.
+4 algoritmik kabin: bas 4×10 ve 1×15; gitar 1×12 ve 4×12.
+Bunlar 19 farklı işlem modeli/modüldür. Hazır presetler veya ayar kombinasyonları yeni efekt modeli olarak sayılmaz.
+
+TELEFONDA
+1. Ana ekrandan Pedalboard'a gir ve enstrümanını seç.
+2. Altı yuvadan birine dokun. Pedal ekle/değiştir ile modelini seç.
+3. Parametreleri düzenle; açık/kapalı düğmesiyle bypass yap. İstersen sırasını değiştir.
+4. Amfi ve kabin bölümlerinden model seç. Bunlar altı pedal yuvasından ayrı tutulur. Modeli kaldırabilir veya bypass yapabilirsin.
+5. Amfi → kabin ikilisinin zincirdeki yerini seç: zincir başı veya 1–6. yuva sonrası.
+6. Yuvayı dinle yalnız seçili pedalı; Amfiyi/Kabini dinle yalnız seçili modülü duyurur. Düzeni dinle tüm açık pedallar ve amfi/kabini seçilen sırayla işler.
+7. Düzen cihazda otomatik kaydedilir. Dosyaya aktar ile başka düzenleri ayrı JSON dosyalarında saklayabilirsin.
+
+BİLGİSAYARDA
+Masaüstündeki Guitar & Bass FX kısayolunu aç. Pedalı seçip sağdaki ayarlarını düzenle.
+Ortadaki Amfi & kabin bölümünde model düğmesine tıkla. Açılan pencerede modeli, parametreleri ve açık/kapalı durumunu seç; Tamam ile uygula. Vazgeç mevcut düzeni korur.
+Zincirdeki yer düğmesi amfi/kabini 0–6 yuva arasına yerleştirir. Yuvayı dinle tek pedalı, Düzeni dinle tüm zinciri çalar. Kaydet ile dosyanı sakla.
+
+ENSTRÜMAN ÖNERİSİ
+Enstrüman seçmek mevcut amfi/kabin ayarlarını kendiliğinden değiştirmez. Öneriyi uygula eylemi ve onayı mevcut amfi/kabin parametrelerini varsayılan öneriyle değiştirir; pedal yuvaları ve ekleme noktası korunur.
+Bas: temiz bas amfisi + 4×10. Elektro: temiz gitar amfisi + 1×12. Akustik/klasik: uygun preamp, kabin yok.
+EQ ve filtre başlangıç davranışı enstrüman profiline uyarlanır. Hz birimleri, yüzde, ms ve dB ilgili kontrolün gerçek anlamına göre gösterilir; örnekleme hızı enstrüman seçimiyle değişmez.
+
+ESKİ DÜZENLER VE AKTARIM
+Yeni sürümler eski v1 düzenlerini kimlik, sıra, ayar ve bypass bilgilerini koruyarak açar; yeni kayıtlar v2 olur.
+Yeni v2 dosyası için Windows 0.5 ve Android 0.10 gerekir. Eski Windows 0.4 bu dosyayı açmaz.
+Aktarım halen elle dosya paylaşımıdır. Üyelik veya otomatik bulut eşitleme eklenmedi.
+Kurulum güncellemesi önceki program klasörlerini ve kullanıcı kayıtlarını silmez.
+
+SESİN BUGÜNKÜ SINIRI
+Dinleme düğmeleri 2,7 saniyelik üretilmiş enstrüman örneğini yeni ses işlemcilerinden geçirir. EQ, kompresör, overdrive, chorus, delay, reverb, amfi ve kabin bu örneğin sesini gerçekten işler.
+Amfiler özgün karakterlerdir; marka/model pedalların birebir kopyası değildir. Kabinler filtre tabanlı algoritmik yanıtlardır; ölçülmüş IR kaydı veya IR içe aktarma özelliği yoktur.
+VA/FM demo notalarını kullanır; bas/gitar girişinden canlı nota takibi veya piyano/saksafon/klarnet dönüşümü yoktur.
+Yeni efekt/amfi/kabin motoru Ses kartı testi ekranındaki temiz USB yoluna henüz bağlanmadı. Donanımı bağladığında bu yeni efektlerin canlı çaldığı sözü verilmez.
+Karşılaştırmalı dinleme kalitesi, gerçek bas/M-Track Duo, analog gecikme, uzun süreli cihaz performansı ve sahne kabulü bekliyor. Bunları kullanıcı hazır olduğunda ayrı küçük adımda doğrulayacağız.
+
+PEDAL SAYISINI NASIL ARTIRACAĞIZ?
+Bir sonraki küçük efekt paketi için öneri: gate, fuzz ve envelope filter/auto-wah. Ardından tremolo/phaser, octave/pitch, gelişmiş delay/reverb ve kapsamlı synth aileleri.
+Her model: çalışan işlemci + düzenlenebilir parametre + kısa demo + ölçüm + karşılaştırmalı dinleme + cihaz performansı. Model sayısı ile hazır preset sayısı ayrı tutulacak. Bu sıra bir sonraki paketin topluca tamamlandığı anlamına gelmez.
+
+İNDİRME
+Windows güncellemeleri: https://github.com/DKDodo/Guitar-Bass-FX/releases/latest
+Android bu Windows güncelleme kanalıyla kurulmaz; mevcut deneme APK'sı ayrı hazırlanır. Play Store yayını henüz yapılmadı.
