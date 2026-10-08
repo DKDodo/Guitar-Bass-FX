@@ -1,0 +1,11 @@
+*.zip
+*.apk
+*.aab
+*.jar
+*.class
+*.keystore
+*.jks
+local.properties
+node_modules/
+build/
+dist/
