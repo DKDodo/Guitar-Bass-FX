@@ -1,0 +1,28 @@
+GUITAR & BASS FX — ANDROID 0.18 PEDAL RAFI
+9 Ekim 2026
+
+Seçilen tema: 3 — Pedal Rafı. Sürüm 0.18.0-pedal-shelf-preview / code 18.
+Sıcak koyu zemin, krem yazılar, renkli metal pedal kartları ve amber vurgu korunur. Normal telefon görünümü iki sütun / üç sıradır. Sabit alt sekmeler: Pedallar, Tonlar, Akort, Menü.
+
+PEDALLAR
+Kartın üst yüzüne dokun: pedalın ayar paneli açılır. Boş karttan pedal seçilir. Açık/Kapalı düğmesi yalnız o pedalı devreye alır; yanındaki ▶ 3 sn düğmesi gitar bağlamadan 2,7 saniyelik örneğini çalar. Kart seçimi ve örnek dinleme ayrı eylemlerdir. Ayar panelindeki döner kontroller sürükleme, klavye ve erişilebilirlik eylemlerini destekler. Dinle ve Bitti panelin altında kalır.
+Üstteki düzen adı, adlandırma/dosya/yeni düzen menüsünü açar. Enstrüman seçiminde dört profil bulunur. Amfi/Kabin düğmeleri modelleri ve ayarlarını açar. Canlı çal kayıtlı düzenin USB ekranını açar; Düzeni dinle tüm açık zincirin kısa örneğini çalar.
+
+MENÜ
+Düzenlerim: bu cihazdaki geçerli düzeni adlandır, başlangıç önerisi kullan, dosyadan aç, dosyaya aktar veya yeni düzen oluştur. Bu sürüm bir yerel etkin taslak tutar; dosyalar elle açılıp aktarılır. Çoklu kayıt kütüphanesi veya bulut eşitlemesi değildir.
+Amfi ve kabin: amfi/kabin modelini ve ayarlarını aç, zincirdeki yerlerini seç.
+Bağlantı: mevcut temiz USB bağlantı testi ekranına gider.
+Akort aleti: enstrüman profiline göre akort ekranını açar.
+Ayarlar: enstrüman, düzen adı ve amfi/kabin sırası için çalışan seçenekler sunar.
+Yardım: internet gerektirmeyen kısa kullanım açıklaması açılır.
+Menüden geri dönmek Pedallar'a döner. Sekme değişimi kayıtlı düzeni, pedal ayarlarını veya seçili yuvayı değiştirmez. Tonlar her zaman ton kütüphanesini açar.
+Menü/akort/USB ekranına geçmek ses girişini kendiliğinden başlatmaz; ilgili ekrandaki Başlat ile açılır.
+
+EKRAN UYUMU
+Normal telefonda iki sütun; çok dar pencerede veya dar pencerede büyük yazıyla bir sütun; yeterince geniş pencerede üç sütun. İçerik kayar, alt gezinme sabittir; dar pencerede gezinme iki sıraya geçebilir. Aç/kapat ve demo hedeflerine en az 48dp ayrılır. Telefon kontrolleri ve 180..1100dp ayrık kart ölçümleri geçti. Bunlar fiziksel tablet/büyük yazı cihaz kabulü yerine geçmez.
+
+MEVCUT SINIRLAR
+Bu sürüm arayüz adımıdır. Canlı motorda EQ/kompresör/gate desteklenir. Diğer etkin pedallar ve amfi/kabin canlı çalmayı başlatmadan önce bildirilir; bu modeller kısa örneklerde kullanılabilir. Native motor, model/codec/katalog ve demo DSP'si değişmedi.
+Gerçek USB ses, gecikme, işitsel kalite, sahne ve tablet kabulü bekler. GR-55 benzeri gerçekçi enstrüman dönüşümü, üyelik ve otomatik eşitleme henüz eklenmedi.
+Windows kurulu/yayımlanan sürümü 0.6'dır; Android denemesi Windows güncelleme kanalında yayımlanmaz. Google Play yayını yapılmadı.
+Seçilen taslak özgün vektörlerle uygulanmıştır; oran/yazı ölçeğine göre uyarlanır.
