@@ -1,0 +1,20 @@
+GUITAR & BASS FX — ANDROID 0.17 VINTAGE ANALOG
+9 Ekim 2026
+
+Kullanıcının seçtiği ikinci tema: Vintage Analog. Android 0.17.0-vintage-preview / code 17.
+Pedalboard'da espresso arka plan, krem yazılar, renkli metal pedal yüzeyleri, amber ışıklar ve fiziksel anahtar görünümü kullanılır. Tonlar, akort ve canlı USB ekranları aynı ortak renk ailesini kullanır.
+
+NASIL KULLANILIR?
+Altı pedalı ana ekranda gör. Üst yüzeye dokun: seçili pedalın ayar paneli açılır. Boş yüzeye dokun: pedal seç. Altındaki metal anahtar pedalı açar/kapatır; yanındaki ▶ 3 sn yalnız o pedalın 2,7 saniyelik demosunu çalar. Çalan kartta Durdur görünür. Demo diğer yuvaların seçimini veya kayıtlı parametreleri değiştirmez.
+Ayrıntılı düğmeler yalnız ayar panelinde görünür; sürükleyerek, klavyeyle veya erişilebilirlik eylemiyle düzenlenebilir. Seçili pedal şeridi de bu paneli açar.
+Amfi/Kabin kartları modelleri ve ayarlarını açar. Amfi ve kabinin zincirdeki konumu sağ üst Düzen menüsü → Amfi/kabin sırası içindedir. Aynı menüde ad değiştirme, başlangıç önerisi, dosyadan açma/dosyaya aktarma ve yeni düzen vardır. Düzen adına dokunmak ad değiştirmeyi açar; kaydetmeden vazgeçilebilir.
+Düzeni dinle tüm açık zincirin kısa demosunu çalar. Canlı çal kayıtlı pedalboardun USB ekranını açar. Alttaki Tonlar ana kütüphaneye, Akort akort aletine gider; mikrofon kendiliğinden başlamaz.
+
+EKRAN UYUMU
+Normal telefon genişliğinde üç sütun, dar pencerede veya büyük yazıda iki sütun, çok dar pencerede bir sütun, yeterince geniş pencerede altı sütun. İçerik kayar; gezinme altta kalır. Ayrı güç/demo hedefleri en az 48dp için yer ayrılarak düzenlenmiştir. Ana ekranda bütün parametreler gösterilmez. Büyük yazı/narrow/tablet cihazda gerçek kullanım kabulü ayrıca gerekir.
+
+SINIRLAR
+Bu adım arayüzdür. Canlı motorda EQ/kompresör/gate desteklenir; diğer aktif pedallar ve amfi/kabin için önceki başlangıç engeli sürer. Bunların kısa demoları vardır. Native ses motoru, ortak belge şema 2 ve demo DSP'si değişmedi. Gerçek USB ses, gecikme, ton kalitesi ve sahne/tablet kabulü henüz tamamlanmadı.
+Windows kurulu/yayımlanan sürümü 0.6'dır; bu Android teması Windows güncelleme kanalında yayımlanmadı. Üyelik/eşitleme henüz eklenmedi.
+
+Seçilen görsel taslak bir yön gösterir. Uygulama ekranı özgün vektör çizimleriyle uygulanır; farklı oran/yazı boyutlarında taslağın birebir piksel kopyası değildir. İkon, doku ve ışık görünümü ses işleme davranışı değildir.
