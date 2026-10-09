@@ -1,0 +1,63 @@
+GUITAR & BASS FX — GERÇEK SES KABUL TUTANAĞI v1
+9 Ekim 2026 | BOŞ ŞABLON — HİÇBİR DONANIM SONUCU ÖLÇÜLMEDİ
+
+Her birleşim için ayrı tutanak. Boş alan = BİLİNMİYOR; çalıştırılmayan test = ÇALIŞTIRILMADI.
+Arayüz, sayısal DSP ve host benchmark sonuçları bu tutanağın donanım kabul alanlarına aktarılmaz.
+
+OTURUM
+Tarih/saat:
+Uygulama sürümü / APK veya EXE SHA-256:
+Telefon/tablet/PC modeli:
+İşletim sistemi / build:
+Ses arabirimi / firmware / sürücü:
+USB kablosu / OTG / hub / harici güç:
+Bas modeli / 4 veya 5 tel / aktif veya pasif / manyetik seçimi:
+Pedalboard kullanılıyor mu / pedal sırası ve son pedal:
+Mixer modeli / LINE kanalı / mono veya stereo:
+Örnekleme hızı / seçilmiş giriş-çıkış / gerçek açılmış kanallar:
+Giriş kazancı / Input Trim / çıkış seviyesi / direct monitor konumu:
+
+TEST SIRASI VE DURUM
+1. Temiz giriş/çıkış; doğru USB kanalının açıldığını ve dönüşün uygulamadan geldiğini doğrula:
+2. Ekrandaki seviye ile gerçek kulaklık/mixer dönüşü; clipping ve başlangıç/bitiş patlaması:
+3. Analog loopback ile temiz yol toplam gecikmesi, en az 100 tekrar:
+   Yöntem/ölçüm aracı/loopback yolu:
+   Ortanca ms / yüzde 95 ms / en kötü ms / başarısız ölçüm sayısı:
+   Not: direct monitor kuru sesi veya tampon süresi bu ölçümün yerine geçmez.
+4. 30 dakika temiz USB çalımı; kesinti/xrun sayısı, ses önceliği, sıcaklık ve güç:
+5. Tek 3 bant EQ; tek 10 bant EQ; tek kompresör; tek gate:
+6. Altı desteklenen pedal yuvası; kayıtlı sıra ve parametrelerin gerçek seste doğrulanması:
+7. Yalnız canlı entegrasyonu tamamlanmışsa IR, NAM ve diğer efektler:
+   Modeller / kaynak revision / dosya hash / dağıtım hakkı / blok ve IR uzunluğu:
+   Altı efekt + amfi + IR yükünde 60 dakika / en kötü callback süresi / xrun / sıcaklık:
+8. Mono mixer toplamı; alt frekansların korunması ve stereo efektlerde faz kaybı:
+9. Preset/MIDI geçişi yalnız özellik hazırsa; ses seviyesi farkı / tık / kesinti / tail davranışı:
+10. USB çıkar-tak / uygulamadan ayrılma / ekran durumu / ses önceliği kaybı:
+    Gerçek güvenli durdurma, yeniden başlatmada açık kullanıcı eylemi ve yanlış route olmaması:
+
+TON KARŞILAŞTIRMASI
+Kullanıcının gerçek kuru DI kaydı; parmak/pena/slap, düşük B/E ve farklı vuruş şiddetleri:
+Referans program / sürüm / model / IR / parametreler:
+Guitar & Bass FX model / parametreler:
+Giriş kalibrasyonu ve karşılaştırma çıkış seviyeleri:
+Her program aynı DI dosyasını işledi mi / sample-rate dönüşümü var mı:
+Seviye eşit kör A/B dinleme; bas gövdesi, vuruş, sustain, drive karakteri, parazit:
+Kabul eden müzisyen / sonuç / gerekçe:
+Sentetik impulse veya üretilmiş phrase bu dinleme kabulünün yerine geçmez.
+
+GR TARZI DÖNÜŞÜM — AYRI OTURUM
+Tracker / revision / çalgı bankası / kayıt hashleri:
+Tek ses / düşük B/E / teknikler / muting / slide-bend:
+Nota başlangıcından çalgı çıkışına gecikme ortanca/yüzde 95/en kötü:
+Yanlış / kaçan / çift / asılı / oktav hatalı nota sayıları ve toplam nota sayısı:
+Piyano / klarnet / saksafon için müzisyen ses ve ifade kabulü:
+
+KARAR
+Durum: BEKLİYOR / GEÇTİ / KOŞULLU / BAŞARISIZ
+Desteklenen tam cihaz+uygulama+arayüz+model birleşimi:
+Eksik kanıt / sonraki en küçük düzeltme:
+Ölçülmüş gecikme ve çalım hissi:
+Bu sonucun kapsamadığı cihazlar/özellikler:
+
+Kaynak ve yöntem: https://source.android.com/docs/core/audio/latency/measure
+Proje hedefleri ve aşama sınırları: Guitar-Bass-FX-Roadmap-v3.txt.

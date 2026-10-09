@@ -25,9 +25,9 @@ ZIP'i bir klasöre çıkarıp `BasSahnePC.exe` ile aç. Java ayrıca kurulmaz. M
 - Windows 0.9 yerel pedalboard düzenleyicisi, `?` parametre yardımı, akort ve GitHub güncellemeleri. Windows pedalboard canlı ses girişi henüz yok.
 - Önceki v1/v2 düzenleri korunur; telefon ve bilgisayar arasında elle ortak dosya aktarımı yapılır. Üyelik ve otomatik eşitleme henüz yok.
 
-[Parametre yardımı rehberi](Guitar-Bass-FX-Parametre-Yardimi-Rehberi.txt) · [10 bant EQ rehberi](Guitar-Bass-FX-10-Bant-EQ-Rehberi.txt) · [Ses yol haritası v2](Guitar-Bass-FX-Roadmap-v2.txt)
+[Parametre yardımı rehberi](Guitar-Bass-FX-Parametre-Yardimi-Rehberi.txt) · [10 bant EQ rehberi](Guitar-Bass-FX-10-Bant-EQ-Rehberi.txt) · [Onaylanan ses yol haritası v3](Guitar-Bass-FX-Roadmap-v3.txt) · [Gerçek ses kabul tutanağı](Guitar-Bass-FX-Ses-Kabul-Tutanagi-v1.txt)
 
-Ses kalitesi ve uyumluluk gerçek enstrüman/cihaz ölçümleriyle kabul edilecek. Yeni açık kaynak efekt, NAM, ölçülmüş IR ve GR tarzı çalgı dönüşümü motorları araştırma/plan aşamasındadır. Demoların kaldırılması, henüz canlı desteklenmeyen modelleri çalışır hale getirmez.
+Ses kalitesi ve uyumluluk gerçek enstrüman/cihaz ölçümleriyle kabul edilecek. Bağımsız IR pilotu 10.259 sayısal kontrolden ve Android arm64 derlemesinden geçti; NAM motorunun bilgisayarda yükleme/işleme hazırlığı doğrulandı. Gerçek kabin/amfi dinlemesi, telefonda entegrasyon ve canlı performans kabulü bekler. Bu hazırlık yeni uygulama sürümü veya canlı IR/NAM desteği değildir; Android 0.21 ve Windows 0.9 korunur. GR tarzı çalgı dönüşümü ayrı sonraki iş paketidir.
 
 ## İsim geçişi
 

@@ -1,0 +1,71 @@
+GUITAR & BASS FX — ONAYLANAN KALİTE YOL HARİTASI v3
+9 Ekim 2026
+
+KARAR VE KAPSAM
+Kullanıcı piyasa araştırmasının önerilerini kabul etti. Bu belge yeni geliştirme sırasını belirler; v2 tarihsel karar ve ölçüm hedefleri için korunur. İş aşama aşama ilerler. Her modelin araştırma, offline pilot, canlı entegrasyon, gerçek cihaz ve sahne kabulü ayrı tutulur.
+Bugünkü kurulu sürümler Android 0.21 ve Windows 0.9'dur. Android canlı USB zinciri 3 bant EQ, 10 bant EQ, kompresör ve gate ile sınırlıdır. Diğer açık pedallar ile amfi/kabin canlı başlangıcını engeller. Windows canlı pedalboard motoru henüz yoktur.
+
+REFERANS PROGRAMLAR / ONAYLANDI
+Android ses ve bağlantı karşılaştırması: Fender Studio + Deplike. Bunlar Redmi/iRig birleşiminin çalıştığının kanıtı değildir. Tonebridge Android'in USB arabirimlerini desteklemediği açıklaması nedeniyle USB kabul grubunda yer almaz.
+Tam rig ve amfi/kabin referansı: AmpliTube 5, AmpliTube iOS ve TONEX. Masaüstü, iOS ve Android kontrol uygulamaları ayrı ürünlerdir; katalog ve satın alımlar platformlar arasında otomatik aynı sayılmaz.
+Bas mimarisi referansı: Neural DSP Parallax X ve Darkglass Ultimate. Temiz bas gövdesi, Dry Blend ve frekansa göre paralel işleme ürün tasarım hedefleridir; kapalı kaynak motorları uygulamaya kopyalanmaz.
+Sahne iş akışı referansı: AmpliTube Live Mode, TH-U iOS ve ToneStack PRO; okunabilir preset, MIDI ayak kontrolü, hızlı ve dengeli geçişler.
+GR tarzı bas dönüşümünde ayrı karşılaştırma: Jam Origin MIDI Bass. Amfi modelleme ya da kabin IR'si nota takibinin yerine geçmez.
+
+P0 — DONANIM BAĞLANTISI / GERÇEK TEST BEKLİYOR
+İlk kabul cihazları Redmi Note 13 Pro ve mevcut M-Track Duo. Test mümkün olduğunda temiz USB giriş/çıkışı, doğru kanal, güç ihtiyacı, analog toplam gecikme ve 30 dakikalık kararlılık ölçülür. Ardından desteklenen dört efekt türü ve altı yuvanın yükü denenir.
+Gecikme ortanca, yüzde 95 ve en kötü değerle raporlanır; tampon boyutu toplam gecikme değildir. v2'deki <=10 ms tercih, ortanca <=15 ms ve yüzde 95 <=20 ms ilk değerlendirme hedefleri ölçülmüş sonuç veya genel standart sayılmaz. Müzisyenin çalım hissi ayrıca kaydedilir.
+USB iRig alımı bu sonuçlara göre değerlendirilir. iRig USB ve HD X adaydır; analog iRig 2 mevcut uygulamanın USB yolu değildir. Windows'ta modeline uygun ASIO sürücüsüyle ayrı kabul yapılır.
+Başarısızlıkta önce cihaz/route/driver düzeltilir; kapsamlı canlı katalog kabulü yapılmaz. Donanım testi beklerken aşağıdaki sınırlı offline hazırlıklar ilerleyebilir.
+Tutanak: Guitar-Bass-FX-Ses-Kabul-Tutanagi-v1.txt.
+
+P1 — GERÇEK KABİN IR TEMELİ / İLK OFFLINE PİLOT
+Ölçülmüş WAV IR yükleme ve konvolüsyon, mevcut filtre tabanlı kabinlerin ardından ayrı bir model ailesi olarak tasarlanır. İlk pilot yalnız mono 48 kHz, sınırlı uzunlukta PCM16/PCM24/float32 WAV içindir. Uyumlu olmayan dosya açıkça reddedilir; sessiz yeniden örnekleme, kanal karıştırma, IR kırpma veya normalizasyon yapılmaz.
+Dosya okuma/denetleme ve işlemci hazırlama ses callback'i dışında olur. Process sırasında bellek ayırma, dosya/ağ erişimi veya kilit olmaması gerekir. Impulse/tail, değişken blok, reset, bypass, Dry/Wet, bozuk dosya ve sayısal kararlılık testleri yapılır.
+Sentetik impulse dosyaları yalnız sayısal test içindir. Kullanıcıya ses demosu, gerçek kabin bankası veya duyularak kalite kabulü değildir. Doğrudan FIR pilotunun maliyeti ölçülür; uzun IR veya ağır yük için FFT/partition yaklaşımı ayrı değerlendirilir.
+Önce bağımsız pilot; ardından gerekli şema/asset kimliği tasarımı, Android native entegrasyonu ve gerçek bas/mixer dinlemesi.
+
+P2 — SEÇİLMİŞ NAM AMFİ PİLOTU / HAZIRLIK
+NAMCore revision'ı, model mimarileri, bağımlılıklar ve bildirimler pinlenir. A1 ve A2 uyumluluğu ayrı doğrulanır; A2-Lite/Full için destek motor sürümüne göre seçilir. Model/IR dosyalarının dağıtım izinleri kod lisansından ayrı kaydedilir.
+İlk hedef en fazla iki izinli bas amfi/preamp modeli: temiz ve drive karakteri. Doğru giriş seviyesi, kabin içeren capture ile ayrı IR'nin iki kez uygulanmaması, dosya/bellek sınırları ve blok işleme sözleşmesi tanımlanır.
+Host benchmark yalnız ön hazırlıktır. Redmi arm64 işlem yükü, altı efekt + NAM + IR testi ve toplam USB gecikme geçmeden telefonda sahne destekli model diye sunulmaz.
+
+P3 — BAS GÖVDESİ VE CANLI PEDAL PAKETİ / ONAYLANDI
+Dry Blend ve gerektiğinde temiz alt frekans kolu; drive/fuzz, envelope filter, chorus, delay ve reverb için sınırlı doğrulanmış paket. Enstrüman profilleri başlangıç önerisidir; tüm baslar aynı kesim frekansına hapsedilmez.
+Paralel yollarda faz ve işlem gecikmesi, mono mixer toplamı, vuruşların/sustain'in korunması ve seviye eşit A/B kabulü gerekir. Basın alt frekanslarını korumak kontrol edilebilir bir seçenek olacak; her efektin karakterini zorla aynılaştırmayacak.
+İlk portlar mevcut altı yuvanın kimlik, sıra, parametre, bypass ve yerel kayıt davranışını korur. Henüz canlı desteklenmeyen modeller açıkça engel olarak gösterilmeye devam eder.
+
+P4 — SAHNE VE MASAÜSTÜ / ONAYLANDI, SONRAKİ AŞAMA
+Büyük preset hedefleri, MIDI ayak kontrolü, preset seviye eşleme, değişimde tık/patlama/kesinti olmaması, mono/stereo çıkış ve fiziksel bypass alternatifi. Desteklenen altı efekt + amfi/IR yükünde en az 60 dakika prova ve ısınma/kesinti ölçümü.
+Windows native canlı ses ve ASIO yolu ayrıca uygulanır. Tablet gerçek cihaz testi, kayıt/güncelleme geri dönüşü ve Google Play üretim kabulü sürer. Hesap/senkronizasyon canlı çalımın internet bağımlılığı olmayacak şekilde sonraki iş paketidir.
+
+P5 — GR TARZI ÇALGI DÖNÜŞÜMÜ / AYRI ONAYLI PROTOTİP
+Temiz bas -> tek sesli nota/atak/şiddet/bend takibi -> izinli, çok örnekli çalgı motoru. İlk kontrol MIDI olayları; ardından piyano, klarnet ve saksafon sesleri. Düşük B/E, parmak/pena/slap, muting, slide/bend; yanlış/kaçan/çift/asılı nota ve uçtan uca takip gecikmesi ayrı ölçülür.
+Gerçekçi ses bankası ve güvenilir nota takibi birlikte kabul edilmeden gerçek çalgı kalitesi iddiası yapılmaz. Roland GR-55'in ayrı tel/GK yaklaşımına mono jack eşdeğerliği vaat edilmez.
+
+BU ADIMIN TESLİMİ
+Güncel onaylı sıra, tekrarlanabilir ses kabul tutanağı, bağımsız native IR pilotu, NAM hazırlığı ve bas zinciri tasarımı. Kullanıcı uygulamasına yeni IR/NAM canlı desteği, sürüm yükseltme veya yeni demo bu adımın sonucu olarak sunulmaz.
+
+İLK HAZIRLIĞIN SONUCU / 9 EKİM 2026
+Bağımsız IR pilotu: 10.259 sayısal kontrol geçti; ölçülen C++ heap allocation farkı 0. Android arm64 için NDK derlemesi geçti; telefonda yürütülmedi. Gerçek kabin dosyası ve müzisyen dinlemesi bekliyor.
+NAMCore v0.6.0 sabit kaynakla host'ta derlendi. Sentetik A2 Lite/Full yükleme ve 6.000 blok işleme kontrolü geçti. Full modelin en kötü süreleri normal Windows zamanlamasında üç blok boyunun da işlem bütçesini aştı; host başarısı telefon/sahne kabulü değildir.
+Bas zinciri ve kayıt uyumluluğu tasarlandı. İlk gerçek test Redmi + M-Track Duo temiz USB yolu olacak; başarılı sonuçtan sonra uygulamaya tek IR ve seçilmiş küçük NAM modeli aşama aşama bağlanacak. Android 0.21 / Windows 0.9 kurulumları değişmedi.
+
+RESMÎ REFERANSLAR / 9 EKİM 2026 KONTROLÜ
+Fender Studio: https://play.google.com/store/apps/details?id=com.fender.studio
+Deplike: https://play.google.com/store/apps/details?id=com.deplike.andrig&hl=en_US
+Deplike IR kataloğu: https://deplike.com/guitar-fx
+AmpliTube: https://www.ikmultimedia.com/products/amplitube5/
+AmpliTube iOS: https://www.ikmultimedia.com/products/amplitubeios/
+TONEX: https://www.ikmultimedia.com/products/tonex/
+TONEX Android Control: https://www.ikmultimedia.com/products/tonexcontrol/
+Parallax X: https://neuraldsp.com/plugins/parallax
+Darkglass Ultimate: https://neuraldsp.com/manual/darkglass-ultimate
+TH-U iOS: https://www.overloud.com/products/th-u-ios
+ToneStack PRO: https://yonac.com/tonestackpro/index.html
+MIDI Bass: https://www.jamorigin.com/products/midi-bass/
+iRig USB: https://www.ikmultimedia.com/products/irigusb/index.php?p=specs
+iRig HD X: https://www.ikmultimedia.com/products/irighdx/index.php?p=specs
+Tonebridge Android: https://play.google.com/store/apps/details?id=com.ultimateguitar.tonebridge&hl=en_US
+Android ölçüm: https://source.android.com/docs/core/audio/latency/measure
+NAMCore: https://github.com/sdatkinson/NeuralAmpModelerCore
