@@ -1,0 +1,36 @@
+GUITAR & BASS FX — ANDROID 0.21 / WINDOWS 0.9 YARDIM KONTROLLERİ
+
+DEĞİŞİKLİK
+23 modeldeki 118 pedal/amfi/kabin parametresi global terimlerle adlandırıldı.
+Her parametrede kısa Türkçe açıklama açan ayrı ? hedefi bulunur.
+10 bant EQ'nun bütün frekansları ile Input Gain/Output Gain kapsanır.
+Android'in bağımsız synth editöründeki 16 parametre ve canlı/diagnostic seviye kontrolleri de kapsanır.
+Ses işlemesi, model/parametre anahtarları, sınırlar, varsayılanlar ve kayıt biçimi değiştirilmedi.
+
+YEREL DOĞRULAMA
+2012 ortak yardım ve önceki sürüm sözleşme/normalize belge hash kontrolü geçti.
+Windows: 118 yardım eşleşmesi, uzun metinlerin panel içinde kalması, 264 px EQ paneli;
+gerçek owner/nested-owner pencereleri, Escape/Kapat/X ve kaydedilmemiş board/module korunması geçti.
+Windows updater/tuner/DSP/belge/logo/launcher kontrolleri ve 142 paket dosyası hash karşılaştırması geçti.
+Redmi 23117RA68G: pedalboard 2460;
+synth/canlı/diagnostic yardım 624;
+kayıtlı canlı plan/JNI 448;
+üç bant EQ/JNI 41 kontrol geçti.
+Pedalboardda 118; VA/FM editörlerinde ve bağlantı ekranlarında toplam 35 yardım görünümü kontrol edildi.
+Başlık/gövde, Tamam, pencerenin standart Geri işleyicisi, dış dokunma, hızlı tekrar açma,
+eski callback/ayrılan kontrol temizliği ve yardım açıkken ekran yenilenmesi/kapanması doğrulandı.
+Global input injection yerine yalnız uygulamanın kendi AlertDialog işleyicileri kullanıldı.
+Fiziksel tuş/predictive geri hareketi testi değildir; standart dialog kapanma işleyicisi doğrulandı.
+Tercih ve kullanıcı düzen dosyalarının bayt hashleri test öncesi/sonrası eşit kaldı; ses açılmadı.
+Android derleme/lint, önceki APK imzası, iki ABI/6 ELF, 16 KiB hizalama ve lisans dosyaları doğrulandı.
+
+ANDROID APK SHA-256
+36aee51edb579404fd3bf3b74d1bfba685f38bdfb28d9b87941a9f10ebe197d0
+WINDOWS ZIP SHA-256
+c1bad4aaf370410e093d88b4c86b2fd0faeff0d0707cee1ab0588a290f32afc4
+
+SINIRLAR
+Bu kayıt yerel derleme/kurulum ve UI/otomatik kontrol kanıtıdır. Yeni checkpoint CI/yayın indirme sonuçları ayrıca saklanır.
+Android canlı yol: 3/10 bant EQ, kompresör, gate. Diğer açık modeller ve amfi/kabin başlangıcı engeller.
+Windows canlı pedalboard girişi, gerçek USB/enstrüman/iRig dinleme, analog gecikme, sahne/tablet kabulü bekler.
+Masaüstü Güncelle düğmesiyle kullanıcı onaylı kapanıp yeniden açılma kabulü ayrıca bekler.

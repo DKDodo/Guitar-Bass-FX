@@ -1,0 +1,82 @@
+GUITAR & BASS FX — PARAMETRE YARDIMI
+Android 0.21 / Windows 0.9 özellik rehberi
+
+AYAR ADLARI VE ? YARDIMI
+Pedalın ayar panelini aç; öğrenmek istediğin ayarın yanındaki küçük ? simgesine dokun.
+Amfi, kabin ve synth ayarları da aynı yardım düzenini kullanır.
+Terimler İngilizce, kısa açıklamalar Türkçedir. Menü ve gezinme dili Türkçe kalır.
+Yardım penceresi yalnız bilgi gösterir: potansı, açık/kapalı durumu, kayıtlı düzeni veya kaydedilmemiş ayarları değiştirmez; ses testi başlatmaz.
+Telefonda Tamam, geri hareketi veya pencere dışına dokunarak kapat. Bilgisayarda Kapat, pencerenin çarpısı veya Escape ile kapat.
+Telefonda küçük görünen ? simgesinin dokunma alanı daha geniştir. Bilgisayarda yardım düğmesine klavyeyle de odaklanılabilir.
+
+EQ
+Bass: düşük frekanslar. Artı değer basları artırır, eksi değer azaltır.
+Mid: orta frekanslar. Sesin gövdesi ve belirginliğini ayarlar.
+Treble: yüksek frekanslar. Artı değer parlaklığı artırır, eksi değer tizleri azaltır.
+Bass üst frekansları artırmaz; bu bölgede Treble ve Presence kullanılır.
+
+10 BANT EQ
+31.25 Hz: en derin baslar.
+62.5 Hz: derin baslar.
+125 Hz: bas gövdesi.
+250 Hz: alt orta frekanslar.
+500 Hz: orta frekanslar.
+1 kHz: orta frekanslar.
+2 kHz: üst orta frekanslar.
+4 kHz: tizler ve tel atağının belirginliği.
+8 kHz: yüksek tizler.
+16 kHz: en yüksek tizleri düzenleyen high shelf filtresi.
+Her frekansın kendi ? açıklaması vardır; artı değer ilgili bölgeyi artırır, eksi değer azaltır.
+Input Gain: EQ bantlarından önceki seviye. Output Gain: bantlardan sonraki seviye.
+On bant ve iki seviye ±12 dB aralığında, 0,1 dB hassasiyetle ayarlanır. Düzleştir bunları 0 dB yapar.
+
+DİNAMİK PEDALLAR
+Threshold: kompresörde sıkıştırmanın, gate'te açılmanın eşiği.
+Ratio: eşik üstündeki sıkıştırma oranı. 4:1, girişteki 4 dB artışın çıkışta yaklaşık 1 dB artışa dönüşmesidir.
+Attack: kompresörün tepki süresi veya gate'in açılma süresi. Büyük değer daha yavaş tepki verir.
+Release: kompresörün normal seviyeye dönmesi veya gate'in sesi azaltma süresi. Büyük değer daha yavaş geçiş verir.
+Makeup Gain: kompresörün azalttığı ses seviyesini telafi eder.
+Hold: gate'in kapanmadan önce açık kalma süresi. Range: kapalıyken kaç dB azaltıldığı; süre değildir.
+Blend: temiz ve efektli ses karışımı. %0 temiz, %100 yalnız efektli ses.
+
+DİĞER PEDALLAR
+Drive / Fuzz: kırılma ve doygunluk miktarı. Tone: efektli sesin tizleri. Level: son çıkış seviyesi.
+Bias: fuzz kırpılmasının simetrisi. Ekrandaki 0% merkezdir; iki yön farklı kırılma karakteri verir.
+Chorus Rate: dalgalanmanın hızı; Depth: perde hareketinin genişliği.
+Delay Time: ilk tekrarın gecikmesi; Feedback: tekrarların geri besleme miktarı.
+Reverb Room Size: yankı kuyruğunun süresi; Damping: kuyruktaki tizlerin sönümü.
+Auto-wah Sensitivity: çalma şiddetine hassasiyet; Frequency: taramanın en düşük frekansı; Depth: tarama genişliği.
+Resonance: wah filtresindeki frekans vurgusu. Attack / Release: filtre hareketinin tepki ve geri dönüş süreleri.
+Direction Up / Down: güçlü çalarken filtrenin daha yüksek / daha düşük frekansa gitmesi.
+Filter Mode LPF / BPF: üst frekansları azaltan / seçilen frekans bölgesini geçiren filtre.
+Mix: efektli sesin payı; %0 temiz, %100 efektli. Delay'de %100 yalnız tekrarlar duyulur.
+
+SYNTH
+Cutoff: filtrenin çalıştığı frekans. Etkisi seçilen filtre türüne bağlıdır.
+Waveform: Saw / Square / Triangle. Osc Mix: bir oktav alttaki ikinci osilatörün payı; %100 iki osilatörü eşit karıştırır.
+Detune: ikinci osilatörün ince akort farkı. FM Index: FM değişiminin şiddeti. FM Ratio: modülatörün ana osilatöre frekans oranı.
+Synth Attack / Decay / Sustain / Release sesin yükselişini, devam seviyesine geçişini, devam seviyesini ve sönüşünü düzenler. Sustain bir süre değildir.
+LFO Rate hareketin hızı; LFO Depth hareketin miktarıdır. Filter Mode: LPF / HPF / BPF / Notch.
+
+AMFİ VE KABİN
+Gain: amfi giriş kazancı; modeline göre kırılma da değişir. Master: amfinin son çıkış seviyesi.
+Presence: amfinin üst frekanslardaki belirginliği. Bass / Mid / Treble kendi frekans bölgelerini ayarlar.
+Kabin Brightness: tiz geçirgenliği; Resonance: bas gövdesinin frekans vurgusu; Mix: kabin uygulanmış sesin payı.
+Aynı isim farklı bir bölümde farklı işlev taşıyabilir; ? açıklaması o bölümdeki ayara özeldir.
+
+MEVCUT SES DESTEĞİ
+Bu sürüm adlandırma ve yardım değişikliğidir. Ses işlemesi, parametre anahtarları, aralıklar, varsayılanlar ve kayıt şeması değişmez.
+Android canlı USB yolu 3 bant EQ, 10 bant EQ, kompresör ve gate'i destekler. Diğer açık pedallar ve amfi/kabin başlangıcı engeller; bypass gerekir.
+Windows'ta pedalboard ayarları düzenlenir; canlı pedalboard ses girişi henüz yoktur.
+Gerçek bas/USB dinleme, toplam gecikme, iRig uyumu ve sahne kabulü bekler. Yardım eklenmesi bu kabul durumunu değiştirmez.
+Kurulum, cihaz kontrolleri ve yayın sonucu ayrı doğrulama tutanağında kaydedilir; bu rehber bu işlemlerin tamamlandığına dair kanıt değildir.
+
+RESMİ TERİM KAYNAKLARI
+MXR M108S: EQ frekansları, boost/cut ve 16 kHz shelf.
+https://www.jimdunlop.com/content/manuals/M108S.pdf
+MXR M87: Attack, Release ve Ratio kavramları.
+https://www.jimdunlop.com/content/manuals/M87.pdf
+Yamaha: FM Index ve modülatör/frekans oranı.
+https://yamahasynth.com/learn/synth-programming/mannys-fm-xplorations-article-2/
+https://yamahasynth.com/learn/synth-programming/fm101-part-three-the-magic-of-modulation/
+Açıklamalar bu terimler ve uygulamadaki gerçek işlem davranışı karşılaştırılarak yazıldı; ticari pedalların devre veya ses eşdeğerliği iddiası değildir.
