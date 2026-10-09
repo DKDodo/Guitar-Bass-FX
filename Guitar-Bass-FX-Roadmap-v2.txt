@@ -5,7 +5,7 @@ GUITAR & BASS FX — SES YOL HARİTASI v2
 
 0 — DEMOLARI KALDIR / TAMAMLANDI
 Android 0.19 ve Windows 0.7: pedal, ton, amfi ve kabin için üretilmiş kısa sesleri çalan düğmeler kaldırıldı. Düzenleme, kaydetme, içe/dışa aktarma ve akort korundu. Kaynakta sayısal DSP kontrol araçları kalır; kullanıcıya demo çalmazlar. Altı yuva ve dört enstrüman profili değişmedi.
-Android canlı zinciri yalnız EQ, kompresör ve gate destekler. Diğer aktif efektler, amfi ve kabin canlı başlatmayı engeller. Windows pedalboard canlı girişi yoktur. Hazır olmayan bir model aktive edildi diye ses ürettiğini varsaymayacağız.
+Android 0.20 canlı zinciri 3 bant EQ, 10 bant EQ, kompresör ve gate destekler. Diğer aktif efektler, amfi ve kabin canlı başlatmayı engeller. Windows pedalboard canlı girişi yoktur. Hazır olmayan bir model aktive edildi diye ses ürettiğini varsaymayacağız.
 
 1 — İLK GERÇEK DONANIM KABULÜ / BEKLİYOR
 Mevcut Redmi Note 13 Pro + M-Track Duo ile başlayacağız. Kullanıcı henüz iRig almamış. Duo'nun Android/Redmi üzerinde resmi destek veya başarılı gerçek giriş/çıkış kanıtı yok; uyumluluk ölçümle belirlenecek.
@@ -13,7 +13,7 @@ Mevcut Redmi Note 13 Pro + M-Track Duo ile başlayacağız. Kullanıcı henüz i
 İkinci yol: mevcut pedalboardun Hall of Fame 2 çıkışı → Duo girişi (seviyeye göre LINE/INST) → Redmi → Duo MAIN OUT L → mixer LINE. Mono çıkışın yönlendirmesi ve giriş headroom'u doğrulanır. Stereo gerekirse iki çıkış/kablo/kanal kullanılır. Phantom kapalı, giriş/çıkış seviyeleri düşükten ayarlanır. Uzun kablo/ground loop için uygun DI/izolasyon ihtiyacı gerçek mixer ve tesisatla değerlendirilir.
 USB izinleri, seçilen cihazın gerçekten açılan input/output olması, örnekleme hızı/kanallar, güç ihtiyacı, çıkar-tak, ekran durumu ve kulaklık/mixer dönüşü kaydedilecek. Uyumsuz USB yerine sessizce telefon mikrofonuna geçilmeyecek.
 Gecikme: analog girişten analog çıkışa loopback ölçümü; ortanca, %95 ve en kötü değer raporu. Tampon süresi ya da uygulama göstergesi toplam gecikme sayılmaz. FX için ≤10 ms tercih, ortanca ≤15 ms ve %95 ≤20 ms koşullu ilk değerlendirme; hissedilen çalım gecikmesi ayrıca değerlendirilir. Bunlar önerilen proje hedefleridir, ölçülmüş sonuç veya evrensel standart değildir. Synth takip gecikmesi ayrıca raporlanacak.
-Kabul: 30 dakika temiz USB ve üç canlı efekt; yanlış route, kesinti, clipping, başlangıç/bitirişte patlama olmaması. Kalıcı başarısızlıkta önce bağlantı/cihaz yolunu düzelt; geniş efekt yatırımı durdurulur. USB iRig satın alma kararı bu sonuçlara göre; aynı test iRig modeli üzerinde tekrar yapılır.
+Kabul: 30 dakika temiz USB ve desteklenen dört canlı efekt türü; yanlış route, kesinti, clipping, başlangıç/bitirişte patlama olmaması. Kalıcı başarısızlıkta önce bağlantı/cihaz yolunu düzelt; geniş efekt yatırımı durdurulur. USB iRig satın alma kararı bu sonuçlara göre; aynı test iRig modeli üzerinde tekrar yapılır.
 
 2 — KÜÇÜK CANLI PEDAL PAKETİ / ÖNERİ
 Tek ortak yerel C++ DSP sözleşmesi: başlat/reset, desteklenen örnekleme hızları, blok işleme, parametre yumuşatma, bypass, latency bildirimi, dry/wet. Ses callback'inde kilit, dosya okuma, bellek ayırma veya ağ işi olmayacak. Model değişimi hazırlık iş parçacığında, kontrollü geçişle uygulanacak.
@@ -53,3 +53,7 @@ FluidSynth: https://www.fluidsynth.org/wiki/LicensingFAQ/
 
 Future Impact referansı: Panda Audio'nun mevcut V4/V4.5 ürünü bas synth/MIDI genişletici olarak VA/FM ve pitch tracking özellikleri sunar. Bunu piyano/klarnet/saksafonun çok örnekli çalgı yolundan ayrı değerlendireceğiz. Kendi VA/FM katmanımız için osilatör, filtre, envelope, modülasyon ve ifade kontrolü araştırılır; Panda firmware/preset kodunun uygulamaya gömülebilir lisansı varsayılmaz. Kaynak: https://www.panda-audio.com/future-impact-v4
 Sample formatı: VCSL/VSCO'nun SFZ/WAV içerikleri FluidSynth'in SF2/SF3 formatına doğrudan yüklenmez. Dönüştürme veya uygun oynatıcı seçimi sırasında şiddet katmanı, loop/release ve artikülasyonların kaybı kontrol edilir. Motor ve banka seçimi birlikte prototiplenir; saksafon için kaynak ve kalite kararı açık kalır.
+
+9 EKİM EK ADIM — 10 BANT EQ / SAYISAL VE ARAYÜZ ENTEGRASYONU TAMAMLANDI
+Kullanıcı isteğiyle MXR M108S frekanslarını referans alan özgün 10 bant EQ, Android 0.20 canlı zincirine ve Windows 0.8 ortak düzenleyicisine eklendi. On bant ±12 dB / 0,1 dB adım; giriş/çıkış seviyesi, bypass, yerel kayıt ve düzleştirme hazır. İlk dokuz bant oktav peaking; 16 kHz üst raf. Nötr başlangıç basın düşük B/E bölgesini otomatik kesmez. Native/Java frekans tepkisi ve referans uyumu, altı yuva, kontrol geçişi, JNI doğrulaması, Redmi arayüzü ve kayıt korunması geçti. Bunlar fiziksel cihaz sesi veya MXR eşdeğerliği kabulü değildir.
+Sonraki donanım adımına 10 bant EQ dahil: önce temiz giriş/çıkış ve gecikme, ardından tek EQ ve altı yuva yükü; seviye eşit bas dinlemesi ve clipping/xrun/ısınma tutanağı. Kütüphane genişlemesi bu ölçümleri gölgelemeyecek. Rehber: Guitar-Bass-FX-10-Bant-EQ-Rehberi.txt; tutanak: Guitar-Bass-FX-0.20-dogrulama.txt.

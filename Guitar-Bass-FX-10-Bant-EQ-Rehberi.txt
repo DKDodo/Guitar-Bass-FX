@@ -1,0 +1,32 @@
+GUITAR & BASS FX — 10 BANT EQ
+Android 0.20 / Windows 0.8
+
+Pedalboard → boş yuva → 10 bant EQ. Pedala dokunarak ayar panelini aç.
+On sabit frekans: 31,25 / 62,5 / 125 / 250 / 500 Hz; 1 / 2 / 4 / 8 / 16 kHz.
+Her bant ±12 dB; hassasiyet 0,1 dB. Giriş ve çıkış seviyeleri ayrıca ±12 dB ayarlanır.
+Düzleştir on bant ve iki seviyeyi birlikte 0 dB yapar. Pedalın kimliği ve yuva sırası korunur.
+Başlangıç nötrdür. Basın düşük B/E bölgesi için 31,25 ve 62,5 Hz bantları bulunur; zorunlu bass boost veya otomatik low-cut uygulanmaz.
+Telefonda normal yazı boyutunda bantlar beşerli iki sıra; geniş ekranda tek sıra. Büyük yazıda sütunlar azalır. Tüm bantlar ve seviyeler yerel düzende kaydedilir.
+Windows aynı ayarları düzenler ve ortak dosyaya kaydeder. Android'e yerel dosya aktarımı yapılabilir; otomatik hesap eşitleme henüz yok.
+Yeni pedalı içeren dosyalar Android 0.20 / Windows 0.8 veya üstünü gerektirir. Önceki v1/v2 dosyalar açılır; yeni model eski uygulamaya sessizce başka bir pedal olarak çevrilmez.
+
+CANLI SES
+Android'in Canlı çal · USB ekranı kayıtlı altı yuvayı sırayla uygular; 3 bant EQ, 10 bant EQ, kompresör ve gate desteklidir. Diğer etkin efektler ve amfi/kabin için bypass gerekir.
+10 bant EQ için ekstra sabit gecikme tamponu yoktur. Cihazın toplam analog giriş/çıkış gecikmesi ayrıca ölçülmelidir.
+EQ artırmaları çıkışı yükseltebilir. Çıkış göstergesi tepeye vurursa EQ/çıkış seviyesini azalt. Ses kartında kırpılmış giriş için ses kartının giriş kazancını azalt; çıkışı azaltmak o bozulmayı geri alamaz.
+Windows pedalboard canlı ses girişi henüz hazır değildir.
+Gerçek bas + M-Track Duo / iRig dinleme, gecikme ve sahne kabulü henüz yapılmadı. Kullanıcının iRig'i yok; satın alma önerisi cihaz ölçümünden sonra kesinleşecek.
+
+SES TASARIMI VE KAYNAK
+MXR M108S frekansları ve kontrol aralığı referanstır. MXR'nin kaynak kodu, firmware'i, logo/tasarımı veya analog devresi kopyalanmadı; ürün ortaklığı iddiası yoktur.
+İlk dokuz bant bir oktav genişliğinde sayısal peaking EQ; 16 kHz bandı üretici kılavuzundaki gibi high shelf (S=1). Filtre genişliği ve analog karakter için birebir eşdeğerlik iddiası yoktur.
+W3C/RBJ matematiksel tasarım yöntemiyle yazılmış özgün Java referansı ve C++ canlı işlemcisi; çift hassasiyetli katsayı/durum, kilitsiz hazırlanmış kontrol aktarımı ve 20 ms ayar geçişi.
+Örnekleme hızının %49'una ulaşan bant yerinden oynatılmaz: işleme dışı bırakılır, kayıtlı ayarı korunur. Normal 44,1/48 kHz hızlarında on bandın tamamı işlenir. Düşük hızda yüksek bantların etkisi olmaz.
+MXR'nin 18 V devre headroom'u, analog gürültü tabanı ve empedansı dijital uygulamanın veya USB aparatın özelliği olarak sunulmaz. Bu sürüm ölçülmüş MXR klonu değildir.
+
+Resmi MXR ürün sayfası: https://www.jimdunlop.com/mxr-ten-band-eq/
+Resmi M108S kılavuzu: https://www.jimdunlop.com/content/manuals/M108S.pdf
+Kılavuz şekli 250 Hz'i doğrular; specs metnindeki 50 Hz yazımı esas alınmadı. Specs 16 kHz için shelf belirtir.
+W3C Audio EQ Cookbook: https://www.w3.org/TR/audio-eq-cookbook/
+
+Sayısal, arayüz ve kurulum doğrulaması ayrı tutanakta kaydedilir. Gerçek ses kalitesi ve MXR eşdeğerliği ancak seviye eşit ölçüm/dinleme ile değerlendirilebilir.

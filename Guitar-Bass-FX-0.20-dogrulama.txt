@@ -1,0 +1,22 @@
+GUITAR & BASS FX — 10 BANT EQ DOĞRULAMASI
+9 Ekim 2026 — Android 0.20 / Windows 0.8
+
+TAMAMLANDI
+Android APK assembleDebug/lintDebug ve release manifest kontrolü geçti. Aynı önizleme imzası korundu. İki ABI içindeki altı native ELF ve APK 16 KiB hizalaması doğrulandı; lisans/notice dosyaları pakette.
+Redmi'ye install -r ile kuruldu; kurulu APK SHA-256 final APK ile aynı. Tercih ve aktif pedalboard dosyaları kurulum/kontroller boyunca baytları değişmeden korundu. Uygulama verisi silinmedi. Kontrol sonunda normal ana ekran açıldı.
+Redmi: 665 pedalboard/menü kontrolü; 448 canlı düzen UI/JNI kontrolü; 41 mevcut üç bant EQ UI/JNI kontrolü. Giriş sesi açılmadı. Yeni EQ gerçek ekran görüntüleri, standart pedal ayarları ve raf görünümü incelendi.
+Java: 980 ortak belge/katalog kontrolü; 177 mevcut DSP kontrolü; 274 gate/fuzz/envelope davranış kontrolü; 306 yeni EQ model/frekans tepkisi/headroom kontrolü; 1056 kayıtlı canlı plan kontrolü ve 240 düzen referansı. USB yönlendirme policy'si 87 kontrol.
+C++: 23 temiz ses güvenliği kontrolü; mevcut EQ 197 kontrol/120 Java referansı; kayıtlı zincir 1412 kontrol/240 referans/1.376.256 örnek (Java farkı <1e-6). 10 bant EQ 54 Java referansı/221.184 örnek (fark <1e-9), frekans tepkisi ve kararlılık kontrolleri. Örnek başına kontroller kalite/dinleme kabulü olarak sayılmadı.
+İlk dokuz bandın merkez frekansında ±12 dB; 16 kHz rafının orta noktasında yarı kazanç ve yüksek frekans asimptotu; düşük B/E, boost-cut karşılıklılığı, düz EQ, ayrı seviye kazançları ve desteklenmeyen yüksek bandın yer değiştirmeden bypass'ı kontrol edildi.
+Windows: 12 EQ kontrolü, 0,1 dB değerleri, dar görünüm, yerel dosya round-trip ve tek değişiklikle düzleştirme kontrolü. Paket/launcher/simge, 73 updater ve 258 tuner kontrolü geçti. Son ZIP'in 142 dosyası kuruluma karşı hash ile doğrulandı; masaüstü kısayolu 0.8'e geçti, önceki kurulum korunuyor.
+
+PAKETLER
+Android: Guitar-Bass-FX-0.20-deneme.apk
+SHA-256: bd42145e8210e5569556e7e5894d9a0b67e528eeab0f8551bb04b4a0028d6373
+Windows: Guitar-Bass-FX-PC-0.8.0-windows-x64.zip
+SHA-256: 4ee48683de6d156198b18b892d97a78f2522799e8d588b1c728a3ee05d76160f
+
+BEKLİYOR
+Gerçek bas/USB giriş-çıkış, analog loopback gecikmesi, altı EQ'nun telefonda canlı CPU/xrun/ısınma raporu, 30/60 dakika kesintisiz çalım ve sahne kabulü.
+Gerçek MXR M108S ile seviye eşit dinleme/ölçüm karşılaştırması. Frekans/kontrol esinlenmesi birebir devre veya analog karakter eşdeğerliği değildir.
+Gerçek tablet testi, iRig modelinin fiziksel uyumluluk kabulü, Windows canlı pedalboard ses motoru ve kullanıcı tarafından tam güncelleme düğmesi → kapanış → yeniden açılış denemesi.
