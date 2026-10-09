@@ -1,0 +1,20 @@
+GUITAR & BASS FX — TELEFONDA PEDALBOARD
+9 Ekim 2026 · Android 0.12
+
+PEDAL EKLE
+1. Ana ekranda Pedalboard'u aç.
+2. İstediğin boş yuvadaki “+ Pedal ekle” düğmesine dokun. Liste doğrudan açılır.
+3. Bir pedal seç. Pedal o yuvaya kaydedilir; ekran ayarlarını gösterir.
+4. Ayarları düzenle. “Yuvayı dinle” yalnız bu pedalı, “Düzeni dinle” açık pedalları ve amfi/kabini birlikte duyurur.
+
+DOLU YUVA
+Pedal kartına dokununca ayarlarına geçilir. Üstteki pedal adı ve ok düğmesiyle başka pedal seçebilir, “Boş yuva” ile kaldırabilirsin. “Vazgeç” veya geri ile seçimi iptal etmek mevcut düzeni değiştirmez. Yukarı/aşağı okları sıralamayı değiştirir.
+
+ALTI YUVA VE AYRI AMFİ/KABİN
+11 pedal modelinden en çok altı yuva doldurulur. Aynı modeli tekrar ekleyebilir veya yuvaları boş bırakabilirsin. Amfi/kabin altı yuvadan sayılmaz. Yerel düzen otomatik saklanır; ayrı düzenleri Dosyaya aktar ile koruyabilirsin. Dosyadan aç mevcut düzeni değiştirmeden önce onay ister.
+
+UYUM
+Windows 0.6 ile aynı şema 2 dosyası paylaşılır; önceki v1/v2 dosyaları açılır. Gate/Fuzz/Auto-wah için en az Android 0.11/Windows 0.6 gerekir. Güncel Android 0.12, boş yuvaya pedal ekleme akışını düzeltir.
+
+SES ÖNİZLEMESİ
+Dinleme düğmeleri 2,7 saniyelik üretilmiş örnek sesi işler. Gate demosu farkı kıyaslamak için örnek gürültü içerir. Canlı USB efekt entegrasyonu, gerçek enstrüman kalite/gecikme ve sahne kabulü bekler.
