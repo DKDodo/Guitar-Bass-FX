@@ -1,0 +1,31 @@
+GUITAR & BASS FX — ANDROID 0.14 CANLI EQ REHBERİ
+9 Ekim 2026
+
+Telefon: 0.14.0-live-eq-preview. Windows: 0.6.
+
+NASIL AÇILIR?
+Ana ekranda Canlı EQ · USB düğmesine dokun. USB gitar arayüzünü ve enstrümanın bağlı olduğu girişi seç. Başlat için Android ses alma izni gerekir; bu izin USB girişini almak için de kullanılır. Ses arayüzü yoksa Başlat kapalıdır. Ayarları aşağı kaydırarak inceleyebilirsin.
+
+BAĞLANTI
+İlk deneme: Bas/gitar → arayüzün enstrüman girişi → USB üzerinden telefon → işlenmiş USB dönüşü → arayüzün çıkışı → kulaklık veya uygun mixer girişi.
+Küçük USB-C gitar arayüzü de bir ses dönüştürücüdür. Program marka adına bağlanmaz; Android'in birlikte sunduğu USB giriş ve çıkışını seçer. M-Track Duo test cihazı olarak korunur. iRig USB gibi adaylarda FX/USB dönüşü işlenmiş sesi, THRU/doğrudan dinleme temiz donanım yolunu verebilir; modelin kullanım kılavuzunu takip et. Bluetooth ses yolu bu denemeye dahil değildir.
+Fiziksel pedalboard için ikinci aday: Bas → önceki fiziksel pedallar → USB gitar arayüzü ↔ telefon → Hall of Fame 2 → mixer. Arayüzün pedal/amp çıkışı ve giriş seviyeleri gerçek kurulumda doğrulanacak. Mevcut Hall of Fame 2 → mixer 6,35 mm bağlantın ilk temiz aktarım denemesinde arayüzden önce de kullanılabilir. Mixer modeli değiştiği için bağlantı ve seviye kabulü her kurulumda ayrıca değerlendirilir.
+
+AYARLAR
+Enstrüman seçimi bas, elektro, akustik veya klasik gitar olabilir. Ana ekrandaki seçim başlangıçta bu ekrana taşınır. Üç EQ noktası mevcut demo EQ'suyla aynı profili kullanır:
+Bas gitar: 80 / 800 / 6000 Hz.
+Elektro gitar: 250 / 1500 / 6000 Hz.
+Akustik gitar: 160 / 1200 / 10000 Hz.
+Klasik gitar: 160 / 1000 / 7000 Hz.
+Bunlar değiştirilebilir ürün başlangıçlarıdır; evrensel enstrüman standardı veya sesin izin verilen frekans aralığı değildir. Alt ve üst armonikleri kesen bir profil filtresi yoktur. Örnekleme hızı enstrümana göre değiştirilmez; ses arayüzünün açılan hızı kullanılır. Düşük örnekleme hızında kullanılamayan EQ noktası güvenli sınıra indirilir ve canlı ekran gerçek uygulanan Hz değerini gösterir.
+Giriş azaltma: -24 ile 0 dB, başlangıç -6 dB. Arayüzdeki fiziksel gain ayarının yerine geçmez; girişte taşmış sesi düzeltemez.
+Bas/Orta/Tiz: -12 ile +12 dB, başlangıç 0 dB. Bas ve tiz shelf, orta peaking filtredir.
+Üç bant EQ anahtarı EQ'yu devre dışı bırakır; giriş azaltma ve çıkış düzeyi uygulanmaya devam eder.
+Çıkış düzeyi: başlangıç %25. İlk denemede arayüz/mixer/kulaklık düzeyini düşük aç.
+Ayar değişimleri geçişlerle uygulanır. Durdur ile veya ekrandan ayrılarak sesi kapat. USB kopması/ses önceliği kaybında aktarım durur; kendi kendine yeniden başlamaz ve telefonun mikrofonuna/hoparlörüne geçmez.
+
+BU ADIMIN SINIRI
+Şu an canlı USB yoluna yalnız giriş azaltma ve üç bant EQ bağlıdır. Pedalboardun 11 modeli, amfi/kabin ve demoları yerindedir; altı pedallı düzen canlı ses olarak henüz uygulanmaz. Ses kartı testi eski temiz yolu ayrıca sunar.
+Bu ekrandaki EQ ayarları açık ekranın oturum ayarlarıdır; pedalboard dosyasına veya bilgisayara henüz kaydedilmez. Ekran yeniden oluşturulduğunda ayarlar korunacak şekilde hazırlanır; çıkıp tekrar açmak başlangıç değerlerini getirir ve ses tekrar elle başlatılır.
+Dosya kaydı veya ses gönderimi yapılmaz. Gerçek bas/gitar, USB arayüzü uyumu, gürültü, güç ihtiyacı, analog girişten çıkışa gecikme ve uzun süreli sahne kabulü bekler. Tampon boyutu toplam gecikme diye gösterilmez.
+Sıradaki yazılım adımı: EQ'yu ortak pedalboard düzenine bağlamak, sonra küçük kapsamlarla gate/kompresör eklemek. Önceki fiziksel bağlantı/akort kabulü ayrıca tamamlanacak.
