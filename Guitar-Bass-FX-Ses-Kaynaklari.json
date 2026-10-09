@@ -1,0 +1,333 @@
+{
+  "research_date_user_timezone": "2026-10-09 Europe/Istanbul",
+  "scope": "Aday kaynak ve lisans envanteri; uygulama koduna entegrasyon veya ürün testi değildir.",
+  "project_context_received_from_parent_not_independently_retested": "Kapalı kaynak Guitar & Bass FX; Redmi Note 13 Pro ve M-Track Duo mevcut; iRig henüz satın alınmadı. Üretici tarafından Duo Android garantisi doğrulanmış değil. Gerçek cihaz giriş/çıkış, gecikme, ses kalitesi ve sahne kabulü ölçülmedi.",
+  "evidence_distinction": "verified_upstream_facts kaynaklarda doğrulanan özeti; android_port_assessment, engineering_risks ve engineering_recommendation mühendislik çıkarımı/önerisidir.",
+  "airwindows_inventory": {
+    "commit": "9b871163678d26bde17c7d258b14d37187f942a3",
+    "candidate_count": 525,
+    "registry_count": 525,
+    "duplicate_names": 0,
+    "missing_source_pairs": 0,
+    "tree_truncated": false,
+    "manifest_sha256": "fb59d0190218ebe90f4fa8a486d8ba9d8cb103038c5fe0c38c1074c4005a67ae",
+    "manifest_source": "https://github.com/baconpaul/airwin2rack/blob/9b871163678d26bde17c7d258b14d37187f942a3/src/autogen_airwin/CMakeLists.txt",
+    "registry_source": "https://github.com/baconpaul/airwin2rack/blob/9b871163678d26bde17c7d258b14d37187f942a3/src/ModuleAdd.h",
+    "csv": "Guitar-Bass-FX-Airwindows-Adaylari.csv",
+    "official_category_counts": {
+      "Ambience": 25,
+      "Amp Sims": 17,
+      "Bass": 10,
+      "Biquads": 9,
+      "Brightness": 26,
+      "Clipping": 9,
+      "Consoles": 45,
+      "Distortion": 14,
+      "Dithers": 23,
+      "Dynamics": 35,
+      "Effects": 28,
+      "Filter": 53,
+      "Lo-Fi": 20,
+      "Noise": 9,
+      "Reverb": 41,
+      "Saturation": 18,
+      "Stereo": 12,
+      "Subtlety": 20,
+      "Tape": 12,
+      "Tone Color": 17,
+      "Unclassified": 20,
+      "Utility": 38,
+      "XYZ Filters": 24
+    },
+    "interpretation": "525 algoritma adayı; önceki sürümler, stüdyo araçları ve özel algoritmalar dahil. 525 gitar pedalı ya da 525 entegre çalışan efekt değildir."
+  },
+  "sample_inventory_evidence": {
+    "vsco_ce_tree_sha": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+    "tree_truncated": false,
+    "clarinet_paths": 100,
+    "sax_name_paths": 0,
+    "interpretation": "İncelenen resmi ham WAV ağaçta klarnet mevcut; sax adında dosya/klasör bulunmaması tüm başka lisanslı kaynaklarda saksafon bulunmadığı anlamına gelmez."
+  },
+  "candidates": [
+    {
+      "name": "Airwindows / airwin2rack airwin-registry",
+      "categories": [
+        "EQ/filtre",
+        "dinamik",
+        "drive/fuzz",
+        "modülasyon",
+        "delay/reverb",
+        "algoritmik amfi/kabin",
+        "stüdyo/utility"
+      ],
+      "verified_license": "MIT: yalnız çekirdek, src, libs/airwindows ve belirtilen belge kapsamı",
+      "verified_upstream_facts": "Resmi CMake ve ModuleAdd.h kayıtları aynı 525 benzersiz işlemciyi içeriyor. README airwin-registry çekirdeğinin kapalı kaynak kullanımına izin veren MIT kapsamını, JUCE/Rack bağımlılıklarından ayırıyor.",
+      "android_port_assessment": "C++17 statik çekirdek Android NDK/Oboe içine port adayı. Hazır masaüstü VST/Rack paketini APK içine koymak çözüm değil; Android çalışması burada doğrulanmadı.",
+      "independent_asset_rights": "Ticari pedal logosu/markası veya birebir klon hakkı vermez. Kullanılan dosyaların telif/lisans bildirimleri korunmalı.",
+      "engineering_risks": "525 kayıt; önceki sürümler, miks araçları ve özel algoritmalar da içerir. 525 gitar pedalı sayısı değildir. Örnekleme hızı ve mono/stereo davranışı modül başına incelenmeli.",
+      "engineering_recommendation": "Katalog bütün adayları kayıt altına alsın. İlk 6–10 uygun işlemciyi seç, lisans dosyası ve parametre haritasını doğrula; altı yuva yük testinden sonra canlı etiketle.",
+      "sources": [
+        "https://github.com/baconpaul/airwin2rack#the-library-version",
+        "https://github.com/baconpaul/airwin2rack#a-note-on-licensing",
+        "https://github.com/baconpaul/airwin2rack/blob/9b871163678d26bde17c7d258b14d37187f942a3/src/ModuleAdd.h",
+        "https://github.com/airwindows/airwindows/blob/master/LICENSE"
+      ],
+      "priority": "A: ilk efekt paketi",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "DaisySP MIT çekirdeği",
+      "categories": [
+        "envelope/wah",
+        "chorus/flanger/phaser/tremolo",
+        "overdrive",
+        "filtre",
+        "FM/VA/fiziksel model synth"
+      ],
+      "verified_license": "MIT; DaisySP-LGPL alt bileşenleri bununla aynı değil",
+      "verified_upstream_facts": "Resmi README Android/mobile kullanımını ve kapalı kaynak/ticari projeleri belirtir. V1.0.0 sürüm notları LGPL modüllerinin ayrı DaisySP-LGPL kütüphanesine taşındığını bildirir.",
+      "android_port_assessment": "C++14 ve embedded hedefleri port için makul başlangıç; bu projede NDK derlemesi ve süre sınırı testi yapılmadı.",
+      "independent_asset_rights": "Kendi sentez/efekt kodu kullanılır; gerçek piyano/klarnet/saksafon kayıt bankası sağlamaz.",
+      "engineering_risks": "Her modülün lisans başlığı ayrıca incelenmeli. Genel synth algoritması, belirli Future Impact veya ticari pedalın birebir sesi değildir.",
+      "engineering_recommendation": "MIT autowah, overdrive ve modülasyon modüllerinden küçük paket seç. Bas için kuru ses karışımı, giriş seviyesi, filtre sınırları ve anti-aliasing kontrolünü projeye ekle.",
+      "sources": [
+        "https://github.com/daisyaudio/DaisySP",
+        "https://github.com/daisyaudio/DaisySP/blob/master/LICENSE",
+        "https://github.com/daisyaudio/DaisySP/releases/tag/V1.0.0",
+        "https://github.com/daisyaudio/DaisySP/blob/master/CMakeLists.txt"
+      ],
+      "priority": "A: ilk efekt/synth paketi",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "NeuralAmpModelerCore",
+      "categories": [
+        "amfi/preamp capture",
+        "drive karakteri/model"
+      ],
+      "verified_license": "MIT çekirdek; Eigen ve diğer bağımlılıklar ayrıca denetlenmeli",
+      "verified_upstream_facts": "Resmi depo C++ NAM DSP çekirdeğidir; model yükleme ve benchmodel araçları vardır. README Eigen hizalama/vektörleştirme sorununu açıklar.",
+      "android_port_assessment": "Android ARM64 NDK port ve modele özel performans deneyi gerekir; model boyutu değiştikçe yük değişir.",
+      "independent_asset_rights": ".nam ağırlıkları/capture dosyalarının dağıtım hakları çekirdeğin MIT lisansından bağımsızdır. İnternetten ücretsiz indirme, uygulama içinde yeniden dağıtım izni sayılmaz.",
+      "engineering_risks": "NAM genel chorus, delay, reverb veya audio-to-MIDI/GR-55 motoru yerine geçmez. Capture ayar noktası ve giriş kalibrasyonu sonucu belirler.",
+      "engineering_recommendation": "Önce açık dağıtım hakkı kanıtlı tek küçük amp-only model ile pilot. Amp+cab capture kullanılıyorsa ikinci kabini ekleyerek sesi iki kez filtreleme; ses seviyesini eşitleyip referansla kıyasla.",
+      "sources": [
+        "https://github.com/sdatkinson/NeuralAmpModelerCore",
+        "https://github.com/sdatkinson/NeuralAmpModelerCore/blob/main/LICENSE",
+        "https://github.com/sdatkinson/NeuralAmpModelerCore/blob/main/README.md"
+      ],
+      "priority": "B: amfi doğrulaması",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "HiFi-LoFi FFTConvolver",
+      "categories": [
+        "ölçülmüş kabin IR",
+        "konvolüsyon reverb"
+      ],
+      "verified_license": "MIT; opsiyonel FFTW gibi hızlandırıcıların lisansı ayrı",
+      "verified_upstream_facts": "Resmi non-uniform dalı partitioned/two-stage C++ konvolüsyon sağlar. Varsayılan FFT dahil; AudioFFT başlığı gerçek zaman için başlatma sonrasında allocation olmadığını belirtir.",
+      "android_port_assessment": "Taşınabilir C++ çekirdeği NDK adayı; ARM üzerinde x86 SSE yolu kullanılmaz. Tam zincir CPU/buffer testi yapılmalı.",
+      "independent_asset_rights": "Yüklenecek IR WAV dosyasının dağıtım hakkı bağımsız. Motor lisansı ücretli kabin IR paketini dağıtma hakkı vermez.",
+      "engineering_risks": "IR uzunluğu, partition boyutu, sample-rate dönüşümü ve bloklatma gecikmeyi/yükü etkiler. Statik IR, amfinin nonlinear drive davranışını tek başına modellemez.",
+      "engineering_recommendation": "Önce tek kısa kabin IR ve sınırlı uzunlukla başla; IR yükleme/dönüştürmeyi ses callback dışında yap. Önce/sonra impulse ve referans çıktı testi uygula.",
+      "sources": [
+        "https://github.com/HiFi-LoFi/FFTConvolver",
+        "https://github.com/HiFi-LoFi/FFTConvolver/blob/non-uniform/COPYING.txt",
+        "https://github.com/HiFi-LoFi/FFTConvolver/blob/non-uniform/AudioFFT.h"
+      ],
+      "priority": "B: gerçek IR kabin",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "chowdsp_wdf",
+      "categories": [
+        "devre tabanlı filtre/drive/preamp"
+      ],
+      "verified_license": "BSD-3-Clause",
+      "verified_upstream_facts": "Wave Digital Filter C++ kütüphanesi, BSD-3-Clause lisansı resmi depoda doğrulandı.",
+      "android_port_assessment": "NDK içine başlığa dayalı devre modelleri port adayı. Hazır pedallarla dolu bir paket değildir; modelleme ve doğrulama gerekir.",
+      "independent_asset_rights": "Bir ticari pedalın markası, şeması veya kayıtlarının hakları otomatik gelmez.",
+      "engineering_risks": "Nonlinear çözücü, oversampling ve parametre değişimi kararlılığı ayrıca ölçülmeli.",
+      "engineering_recommendation": "Açık/izinli bir devreyi küçük bağımsız pilot olarak seç; devre ve spektral ölçüm referansıyla doğrula. NAM ve modülasyon motorlarını bununla tek ürüne eşitleme.",
+      "sources": [
+        "https://github.com/Chowdhury-DSP/chowdsp_wdf",
+        "https://github.com/Chowdhury-DSP/chowdsp_wdf/blob/main/LICENSE"
+      ],
+      "priority": "C: ileri devre modelleme",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "Cycfi Q pitch/DSP çekirdeği",
+      "categories": [
+        "monofonik nota takibi",
+        "onset/envelope",
+        "MIDI olaylarına dönüştürme altyapısı"
+      ],
+      "verified_license": "MIT: mevcut master LICENSE; alınacak revision ve dosya başlıkları pinlenmeli",
+      "verified_upstream_facts": "Q hafif C++ DSP çekirdeği sunar. Resmi pitch belgesi tek sesli BACF algılamayı, nota kayması/histerezis ve erken tahmin davranışını açıklar.",
+      "android_port_assessment": "q_lib ile mevcut Oboe I/O kullanılabilir; q_io/PortAudio katmanını zorunlu taşımaya gerek yok. Redmi/31 Hz bas üzerinde sınanmadı.",
+      "independent_asset_rights": "Nota algılama motoru sample bankası veya gerçekçi piyano sesini sağlamaz.",
+      "engineering_risks": "Düşük bas notalarında doğrulama gecikmesi ve oktav hataları; çok telin birlikte çalması, slap ve efektli giriş sorunları test edilmeli. Dokümantasyondaki masaüstü performansı Redmi sonucu değildir.",
+      "engineering_recommendation": "Temiz bas girişi → tek nota, onset/velocity/bend → sampler pilotu. Synth için fiziksel octaver/drive/reverb öncesinde temiz DI dalı kullan; erken tahmin yanlış tetiklemeyi artırırsa devre dışı bırak.",
+      "sources": [
+        "https://github.com/cycfi/q",
+        "https://github.com/cycfi/q/blob/master/LICENSE",
+        "https://github.com/cycfi/q/blob/master/q_lib/include/q/pitch/pitch_detector.hpp",
+        "https://cycfi.github.io/q/q/v1.5-dev/reference/pitch.html",
+        "https://github.com/cycfi/q/blob/master/docs/modules/ROOT/pages/reference/pitch/pitch_detector.adoc"
+      ],
+      "priority": "B: GR tarzı tek ses prototipi",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "FluidSynth",
+      "categories": [
+        "SoundFont sample oynatıcı",
+        "MIDI synth"
+      ],
+      "verified_license": "LGPL-2.1; kapalı kaynak dağıtım için relink/değiştirme ve bildirim koşulları çözülmeli",
+      "verified_upstream_facts": "Resmi lisans LGPL 2.1; Licensing FAQ kapalı kaynakta dinamik bağlama ve kütüphaneyi değiştirebilme koşullarını belirtir. Resmi Android build/dependency rehberi var.",
+      "android_port_assessment": "Android desteği mevcut; bağımlı .so dosyaları ve APK/native hizalama doğrulanmalı. Mevcut Oboe render yolu içinde ses üretimi değerlendirilir.",
+      "independent_asset_rights": "SoundFont bankası ayrı lisans ister. SFZ bankası doğrudan SF2 değildir; otomatik kalite kayıpsız uyumluluk varsayılmaz.",
+      "engineering_risks": "Çoklu voice, sample RAM/disk, articulation sınırlamaları ve LGPL paketleme; uygun banka olmadan sadece motor sesi gerçekçi yapmaz.",
+      "engineering_recommendation": "Önce dağıtım koşulları planını tamamla. Hakları açık bir küçük SF2 bankasıyla MIDI → audio pilotu; banka kalitesini kullanıcı müzisyen dinleme kabulüne göre seç.",
+      "sources": [
+        "https://github.com/FluidSynth/fluidsynth/blob/master/LICENSE",
+        "https://www.fluidsynth.org/wiki/LicensingFAQ/",
+        "https://www.fluidsynth.org/wiki/Using-prebuilt-libraries-on-Android/"
+      ],
+      "priority": "B: koşullu sampler pilotu",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "sfizz çekirdek",
+      "categories": [
+        "SFZ sample oynatıcı",
+        "çok katmanlı/artikülasyonlu enstrüman"
+      ],
+      "verified_license": "BSD-2-Clause çekirdek; bağımlılıklar ayrı",
+      "verified_upstream_facts": "Resmi depo C/C++ SFZ motoru ve BSD-2 lisans sunar; sahibi 21 Haziran 2026 tarihinde depoyu arşivlemiştir.",
+      "android_port_assessment": "C++ port teknik olarak değerlendirilebilir; hazır desteklenen Android ürün/Redmi testi bu araştırmada doğrulanmadı.",
+      "independent_asset_rights": "SFZ, örnek WAV/FLAC ve mapping dosyalarının her biri kendi dağıtım koşullarına tabidir.",
+      "engineering_risks": "Arşivli ana depoda bakım/sürüm sorumluluğu bize geçebilir; ARM SIMD/disk streaming/bağımlılık hakları ve bellek ölçümü gerekli.",
+      "engineering_recommendation": "İlk üretim tercihinde bakım planı olmadan bağlanma. SFZ articulation ihtiyacı için kontrollü alternatif deney olarak karşılaştır; kapalı kaynak uyumu tüm bağımlılık ağacıyla doğrula.",
+      "sources": [
+        "https://github.com/sfztools/sfizz",
+        "https://github.com/sfztools/sfizz/blob/develop/LICENSE"
+      ],
+      "priority": "C: bakım koşullu alternatif",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "VCSL Keys",
+      "categories": [
+        "piyano sample bankası",
+        "klavsen"
+      ],
+      "verified_license": "CC0 bankası: resmi üretici açıklaması",
+      "verified_upstream_facts": "Resmi ürün sayfası CC0 SFZ klavye bankasını, release örneklerini ve 680 MB büyüklüğü belirtir.",
+      "android_port_assessment": "Motor değildir. SFZ oynatıcı veya izinli örneklerden kendi mapping gerekir; tamamını temel APK içine doldurmak gerekmiyor.",
+      "independent_asset_rights": "CC0 sample/patch kapsamı kaydedilmeli; kullanılacak paketin hash ve lisans belgesi saklanmalı.",
+      "engineering_risks": "CC0 kalite sertifikası değildir. Banka doğal vintage enstrümanları içerir; bazı karakterler kusurlu/tam stüdyo piyanosu beklentisini karşılamayabilir.",
+      "engineering_recommendation": "Küçük bir piyano alt paketiyle velocity/release/note-off deneyi; kör dinleme değerlendirmesinden geçmezse izinli başka banka veya kendi kayıtlarımız.",
+      "sources": [
+        "https://versilian-studios.com/vcsl-keys/"
+      ],
+      "priority": "B: piyano aday bankası",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "VSCO 2 Community Edition",
+      "categories": [
+        "klarnet/orkestra sample bankası"
+      ],
+      "verified_license": "CC0: yalnız resmi CE ham WAV/SFZ içeriği; türev paketlerin ek örnekleri aynı varsayılmaz",
+      "verified_upstream_facts": "Resmi CE sayfası CC0 lisansını ve SFZ/SF2 farkını belirtir. Resmi ham WAV repo ağacında Woodwinds/Clarinet/stac ve susLong var; sax adıyla dosya/klasör bulunmadı.",
+      "android_port_assessment": "Samplera port edilecek örnek içeriği; 3 GB ana bankadan seçili enstrümanlar ayrı indirme olarak paketlenebilir.",
+      "independent_asset_rights": "Üçüncü taraf VST/Kontakt dönüşümleri veya ek örnekler için CE lisansı otomatik yeterli değil.",
+      "engineering_risks": "Klarnet release/legato/expression yönetimi gereken sese dönüşür. Bu envanter saksafon ihtiyacını doğrulanmış olarak kapatmıyor.",
+      "engineering_recommendation": "Resmi CE klarnet bankasını dinleme kabulü için kullan. Saksafon için açık dağıtım izni doğrulanmış ayrı multisample banka ya da kendi kayıtlarımız gerekiyor.",
+      "sources": [
+        "https://versilian-studios.com/vsco-community/",
+        "https://github.com/sgossner/VSCO-2-CE/tree/master/Woodwinds/Clarinet",
+        "https://github.com/sgossner/VSCO-2-CE/blob/master/LICENSE"
+      ],
+      "priority": "B: klarnet; saksafon bekliyor",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "Spotify Basic Pitch",
+      "categories": [
+        "polifonik audio-to-MIDI araştırması",
+        "kayıttan nota çıkartma"
+      ],
+      "verified_license": "Apache-2.0 kod; seçilen model/dosya/dependency kapsamı ayrıca kaydedilmeli",
+      "verified_upstream_facts": "Resmi README çok notalı transkripsiyon ve dosyadan MIDI üretimini, TFLite/ONNX model seçeneklerini belirtir.",
+      "android_port_assessment": "TFLite Android deneyini mümkün kılabilir; hazır düşük gecikmeli canlı nota kontrolcüsü/Redmi sonucunu belge kanıtlamaz.",
+      "independent_asset_rights": "Bu sınıflandırma sample ses sağlamaz; dağıtılacak model sürümü ve notices doğrulanmalı.",
+      "engineering_risks": "Dosya/transkripsiyon başarısı, sahnede anlık çalma başarısı değildir. Streaming window, geleceğe bakış, onset ve bend gecikmesi ayrıca araştırılmalı.",
+      "engineering_recommendation": "Polifoniyi ayrı araştırma kolunda tut. İlk canlı mono bas hedefini buna bağlama; offline kıyaslama ve hedef latency araştırmasında kullan.",
+      "sources": [
+        "https://github.com/spotify/basic-pitch",
+        "https://github.com/spotify/basic-pitch/blob/main/LICENSE",
+        "https://github.com/spotify/basic-pitch/blob/main/README.md"
+      ],
+      "priority": "D: polifonik araştırma",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    },
+    {
+      "name": "Surge XT",
+      "categories": [
+        "kapsamlı hybrid synth",
+        "synth efektleri"
+      ],
+      "verified_license": "GPL-3.0 ana kaynak; paketleme lisansı ve bağımlılıklar ayrı",
+      "verified_upstream_facts": "Resmi depo kapsamlı açık kaynak hybrid synthesizer ve GPL3 lisansını belirtir; masaüstü/ARM Linux build belgeleri mevcut.",
+      "android_port_assessment": "Android port hazır doğrulanmadı; masaüstü VST ürününü doğrudan telefona entegre etmek mümkün kabul edilmez.",
+      "independent_asset_rights": "Preset/wavetable/sample/tasarım varlıklarının kapsamı ayrıca incelenmeli.",
+      "engineering_risks": "Kapalı kaynak app içine doğrudan çekirdek kopyalama/bağlama GPL yükümlülükleriyle uyuşmayabilir. Mobil CPU ve voice yönetimi ayrıca maliyetli.",
+      "engineering_recommendation": "Synth tasarımı ve dinleme referansı olarak değerlendir. Bu kapalı kaynak ürünün ilk entegrasyon paketinde kullanma; ayrı izin/lisans mimarisi kararı olmadan alınmış kod dağıtma.",
+      "sources": [
+        "https://github.com/surge-synthesizer/surge",
+        "https://github.com/surge-synthesizer/surge/blob/main/LICENSE",
+        "https://github.com/surge-synthesizer/surge/blob/main/README.md"
+      ],
+      "priority": "D: referans/koşullu aday",
+      "project_status": "ADAY: entegrasyon, Redmi benchmark ve dinleme kabulü yapılmadı"
+    }
+  ],
+  "separate_commercial_reference": {
+    "name": "Jam Origin MIDI Bass",
+    "verified_fact": "Resmi FAQ MIDI Bass için şimdilik monofonik kullanım ve akor/açık tel sınırlaması bildirir. Windows/Mac uygulaması; otomatik olarak bizim kullanabileceğimiz açık kaynak SDK değildir.",
+    "source": "https://www.jamorigin.com/products/midi-bass/"
+  },
+  "first_small_live_package_engineering_proposal": [
+    "Mevcut canlı EQ/kompresör/gate üzerine overdrive, fuzz, envelope filter, chorus, delay ve reverb ayrı port/kabul hedefleri. Her birine gerçek giriş işleme, parametre pürüzsüzlüğü, mono/stereo ve sample-rate kontrolü.",
+    "Her hedef için fiziksel bas/gitar girişinde seviyeler eşit A/B dinleme; clipping/denormal/NaN kontrolü, bypass/preset geçişinde klik ölçümü.",
+    "Altı aktif yuva + amfi + kabin için buffer süresi aşımı, underrun, termal ve 30–60 dakika zincir testi. Süre/hedefler öneridir; bu görevde yapılmış değildir.",
+    "Katalogda Araştırma adayı / Port edildi / Canlı doğrulandı durumlarını ayır; performans bütçesi ve hakları geçmeyen modülü etkin ürün sesi gibi sunma."
+  ],
+  "product_categories_engineering_proposal": [
+    "Dinamik: kompresör/gate/limiter",
+    "Drive: boost/overdrive/fuzz/distortion",
+    "Filtre/EQ: parametrik EQ/envelope/wah",
+    "Modülasyon: chorus/flanger/phaser/tremolo",
+    "Zaman/uzay: delay/reverb",
+    "Pitch: octave/pitch-shift/harmonizer",
+    "Synth: VA/FM/envelope",
+    "Amfi/preamp: algoritmik veya hakları açık capture",
+    "Kabin: hakları açık ölçülmüş IR veya açıkça algoritmik",
+    "Enstrüman dönüşümü: temiz giriş nota takibi + bağımsız sample motoru",
+    "Utility: tuner/bypass/levels/routing"
+  ],
+  "asset_license_rule": "Motor kodu, bağımlılıklar, NAM model ağırlıkları, kabin IR ve sample/SoundFont/SFZ bankaları ayrı kayıtlar olarak hash/sürüm/hak kapsamı/notices taşımalı. Ücretsiz indirme veya açık GitHub erişimi yeniden dağıtım iznini kanıtlamaz.",
+  "known_unknowns": [
+    "Redmi round-trip gecikmesi ve M-Track Duo USB güç/route uyumluluğu",
+    "İlk canlı açık kaynak paketinin port/CPU/termal kabulü",
+    "A/B ses kalitesi ve kullanıcının gerçeğe yakınlık kabulü",
+    "Dağıtım hakkı açık saksafon bankası",
+    "Mono bas nota takibinin 31 Hz, slap, hızlı geçiş ve bend başarısı",
+    "Polifonik sahne kullanımına uygun bağımsız motor"
+  ]
+}

@@ -1,0 +1,16 @@
+GUITAR & BASS FX — DEMOSUZ SÜRÜM VE SES PLANI
+9 Ekim 2026 • Android 0.19 / Windows 0.7
+
+“Sesi test et”, tek pedal/ton/amfi/kabin ve tüm zincir için üretilmiş ses çalan düğmeler kaldırıldı. Kullanıcı kendi enstrümanıyla deneyecek. Android için önce enstrüman/USB cihazını bağla; Pedalboard → Canlı çal → Başlat. Şu anda yalnız EQ, kompresör ve gate canlıdır. Diğer açık efektleri ve amfi/kabini bypass etmeden canlı başlatma yapılamaz. Giriş otomatik açılmaz. Windows canlı pedalboard ses yolu henüz hazır değil.
+
+Mevcut 11 pedal, 7 amfi karakteri ve 4 kabin algoritmaları proje için yazılmıştır. Kabinler ölçülmüş IR değildir. Üçüncü taraf pedal motoru, ticari pedal klonu, Roland sample bankası veya gerçekçi piyano/saksafon/klarnet henüz entegre edilmedi. Oboe ses giriş/çıkış kütüphanesidir; efekt seslerini sağlamaz.
+
+Düzenler, aynı altı yuva, dosya biçimi, akort ve güncelleme kanalı korunur. Ana kartta aç/kapat; pedala dokununca parametre paneli ve Bitti düğmesi görünür. Hazır olmayan sesleri temsil eden yapay örnek çalmaz.
+
+Araştırma sonucu: Airwindows/airwin2rack, DaisySP, NAM Core, WDF, convolution ve sampler kaynak adayları. Motor lisansı, model/IR/sample izinleri ve gerçek cihaz performansı ayrı doğrulanacaktır. 525 Airwindows kaydı aday envanteridir, programa entegre edilmiş pedal sayısı değildir. Kategoriler ve küçük doğrulanmış paketlerle genişletme Roadmap-v2'de planlandı.
+
+Bağlantı: henüz iRig alınmadı. İlk test Duo + Redmi ile. Bas/pedal çıkışı → Duo → USB-OTG ↔ Redmi; işlenmiş dönüş → Duo MAIN OUT → mixer LINE. Duo monitörü USB olmalı. Android uyumluluğu/analog roundtrip/USB güç/ısı/uzun performans ve ses kalitesi henüz kabul edilmedi. iRig USB kompakt dijital arayüz adayıdır; model ve Redmi testi satın alma kararı öncesi gerekir.
+
+GR tarzı hedef: temiz bas → tek sesli nota/vuruş/şiddet takibi → kaliteli çok örnekli piyano/klarnet/saksafon. Roland GK yaklaşımı sıradan jack ile eşdeğer varsayılmayacak. Ses bankası ve tracking bağımsız kalite aşamalarıdır.
+
+Bu sürüm sahne ürünü kabulü değildir. Gecikme/gerçek enstrüman/klon kalitesi konusunda başarı garanti edilmedi. Sayısal kontroller ses kalitesinin yerini tutmaz. 6 slaytlık araştırma sunumu ve Roadmap-v2 birlikte değerlendirilir.

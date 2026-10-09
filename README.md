@@ -16,19 +16,16 @@ ZIP'i bir klasöre çıkarıp `BasSahnePC.exe` ile aç. Java ayrıca kurulmaz. M
 
 ## Mevcut önizleme
 
-- Dört enstrüman profili ve altı yuvalı yerel pedalboard düzenleme. Android 0.18 Pedal Rafı altı metal görünümlü kartı, ayrı aç/kapat ve kısa demo düğmelerini birlikte gösterir; yalnız seçilen pedalın ayarları ayrı panelde açılır. Düğmeyle parametre düzenleme, sabit Dinle/Bitti ve Düzen menüsü ekranı sadeleştirir.
-- 11 pedal modeli: EQ, kompresör, overdrive, chorus, delay, oda reverb, Gate, Fuzz, Auto-wah ve Synth VA/FM.
-- Altı yuvadan bağımsız 7 özgün amfi karakteri ve 4 algoritmik kabin; parametre, bypass ve zincirdeki yer seçimi.
-- Tek pedal veya bütün düzen için 2,7 saniyelik üretilmiş ses örneği. Gate demosu bypass ile kıyaslamak için örnek gürültü içerir.
-- Windows 0.6 / Android 0.18 arasında elle ortak v2 dosya aktarımı; eski v1/v2 dosyaları açılır. Yeni Gate/Fuzz/Auto-wah modelleri için bu yeni sürümler gerekir; önceki Windows 0.5/Android 0.10 bu modelleri tanımaz.
-- Android 0.18 Canlı çal · USB: kayıtlı altı yuvadaki EQ, kompresör ve gate sırası, ayarları ve bypass canlıya bağlıdır. Enstrüman profili kayıttan gelir. Diğer aktif pedallar ve amfi/kabin bu adımda başlangıcı bloklar; düzenleyicide bypass yapılması gerekir. Gerçek USB ses/uyumluluk/gecikme kabulü bekler.
-- Manuel başlatılan kromatik akort: nota, Hz, sent, pes/tiz göstergesi.
-- Windows için GitHub güncellemeleri.
-- Android telefon ve tablet ekranlarına uyarlanan arayüz.
+- Android 0.19 demosuz Pedal Rafı: altı pedal kartı, aç/kapat ve ayrı ayar paneli; sabit Pedallar/Tonlar/Akort/Menü sekmeleri.
+- Üretilmiş “sesi test et” düğmeleri Android ve Windows'tan kaldırıldı.
+- Dört enstrüman profili; 11 özgün pedal algoritması, 7 amfi karakteri ve 4 algoritmik kabin ayarı. Ticari pedal klonu veya ölçülmüş kabin IR'si henüz yok.
+- Android canlı USB motoru yalnız EQ, kompresör ve gate destekler. Diğer açık efektler ve amfi/kabin başlangıcı engeller; bypass gerekir. Gerçek USB ses/gecikme/sahne kabulü bekler.
+- Windows 0.7 yerel pedalboard düzenleyicisi, akort ve GitHub güncellemeleri. Windows pedalboard canlı ses girişi henüz yok.
+- Önceki v1/v2 düzenleri korunur; telefon ve bilgisayar arasında elle ortak dosya aktarımı yapılır. Üyelik ve otomatik eşitleme henüz yok.
 
-Bu bir geliştirme önizlemesidir. Pedalboard efekt/amfi/kabin motoru kısa örnek sesi işler; Android 0.18 kayıtlı EQ/kompresör/gate pedalboardunu canlı USB yoluna bağlar. Diğer pedallar ve amfi/kabin canlı değildir. Cihaz/oturum giriş-çıkış düzeyleri ortak ton dosyasına yazılmaz. Amfiler ticari modellerin birebir kopyası değildir; kabinler ölçülmüş IR kaydı kullanmaz. Gerçek enstrümanla karşılaştırmalı dinleme, ses kartı ölçüm doğruluğu ve sahne kabulü bekler. Canlı zincir, gerçekçi piyano/saksafon/klarnet dönüşümü, üyelik ve otomatik eşitleme sonraki adımlardır.
+[Demosuz sürüm rehberi](Guitar-Bass-FX-0.19-Demosuz-Surum-Rehberi.txt) · [Ses yol haritası v2](Guitar-Bass-FX-Roadmap-v2.txt)
 
-[Kompresör ve gate rehberi](Guitar-Bass-FX-0.16-Dinamik-Pedallar-Rehberi.txt) · [Telefon pedalboard rehberi](Guitar-Bass-FX-0.13-Pedalboard-Rehberi.txt) · [Yeni pedal paketi kullanım rehberi](Guitar-Bass-FX-0.11-Pedal-Paketi-Rehberi.txt) · [Amfi ve kabin rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
+Ses kalitesi ve uyumluluk gerçek enstrüman/cihaz ölçümleriyle kabul edilecek. Yeni açık kaynak efekt, NAM, ölçülmüş IR ve GR tarzı çalgı dönüşümü motorları araştırma/plan aşamasındadır. Demoların kaldırılması, henüz canlı desteklenmeyen modelleri çalışır hale getirmez.
 
 ## İsim geçişi
 
@@ -40,8 +37,6 @@ Sürüm denetimi ve indirme GitHub'a bağlanır; ses veya pedalboard içeriği g
 
 Android, Windows güncelleme kanalı üzerinden kurulmaz. Google Play yayını henüz yapılmadı.
 
-## Android 0.18 Pedal Rafı
+## Android 0.19 doğrulaması
 
-Seçilen üçüncü vintage tema uygulandı: normal telefonda iki sütunlu altı pedal, ayrı aç/kapat ve kısa demo düğmeleri; sabit Pedallar/Tonlar/Akort/Menü sekmeleri. Menüde Düzenlerim, Amfi ve kabin, Bağlantı, Akort aleti, Ayarlar ve Yardım çalışan ekranlara bağlıdır. Düzenlerim mevcut yerel taslak ve elle dosya işlemlerini kullanır. Kartın yüzüne dokunmak ayrıntılı ayarları açar.
-
-Redmi: 497 pedalboard/menü + 310 canlı düzen/JNI + 41 EQ/JNI kontrolü geçti; giriş sesi açılmadı ve kullanıcı kayıtları korundu. Gerçek telefon görüntüleri incelendi. [Pedal Rafı rehberi](Guitar-Bass-FX-0.18-Pedal-Rafi-Rehberi.txt). Kullanıcı Redmi’de yeni düzenin rahat kullanıldığını doğruladı. Gerçek USB ses/gecikme/sahne/tablet kabulü bekler. Windows 0.6 sürümü sürer.
+Redmi'de 479 pedalboard/menü + 310 kayıtlı canlı plan/JNI + 41 EQ/JNI kontrolü geçti. Giriş sesi açılmadı; kullanıcı düzeni ve tercihleri korundu. Gerçek telefon görüntüleri incelendi. Donanım/sahne/tablet kabulü bekler.

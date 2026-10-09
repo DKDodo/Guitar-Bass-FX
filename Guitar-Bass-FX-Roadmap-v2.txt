@@ -1,0 +1,55 @@
+GUITAR & BASS FX — SES YOL HARİTASI v2
+9 Ekim 2026
+
+Öncelik: Gerçek enstrümanla iyi ses ve güvenilir sahne kullanımı. Önce bağlantı kanıtı, sonra geniş kütüphane. Bu belge bütün özelliklerin tek seferde kodlanması talimatı değildir.
+
+0 — DEMOLARI KALDIR / TAMAMLANDI
+Android 0.19 ve Windows 0.7: pedal, ton, amfi ve kabin için üretilmiş kısa sesleri çalan düğmeler kaldırıldı. Düzenleme, kaydetme, içe/dışa aktarma ve akort korundu. Kaynakta sayısal DSP kontrol araçları kalır; kullanıcıya demo çalmazlar. Altı yuva ve dört enstrüman profili değişmedi.
+Android canlı zinciri yalnız EQ, kompresör ve gate destekler. Diğer aktif efektler, amfi ve kabin canlı başlatmayı engeller. Windows pedalboard canlı girişi yoktur. Hazır olmayan bir model aktive edildi diye ses ürettiğini varsaymayacağız.
+
+1 — İLK GERÇEK DONANIM KABULÜ / BEKLİYOR
+Mevcut Redmi Note 13 Pro + M-Track Duo ile başlayacağız. Kullanıcı henüz iRig almamış. Duo'nun Android/Redmi üzerinde resmi destek veya başarılı gerçek giriş/çıkış kanıtı yok; uyumluluk ölçümle belirlenecek.
+İlk temiz yol: bas → Duo INST girişi → USB-B/USB-A kablosu ve USB-C OTG veri adaptörü → Redmi. Telefonla işlenmiş dönüş Duo MAIN OUT üzerinden kulaklık/mixer LINE girişine gider. Monitör anahtarı USB konumunda; Direct konumunda kuru ses duymak uygulamanın çalıştığını kanıtlamaz.
+İkinci yol: mevcut pedalboardun Hall of Fame 2 çıkışı → Duo girişi (seviyeye göre LINE/INST) → Redmi → Duo MAIN OUT L → mixer LINE. Mono çıkışın yönlendirmesi ve giriş headroom'u doğrulanır. Stereo gerekirse iki çıkış/kablo/kanal kullanılır. Phantom kapalı, giriş/çıkış seviyeleri düşükten ayarlanır. Uzun kablo/ground loop için uygun DI/izolasyon ihtiyacı gerçek mixer ve tesisatla değerlendirilir.
+USB izinleri, seçilen cihazın gerçekten açılan input/output olması, örnekleme hızı/kanallar, güç ihtiyacı, çıkar-tak, ekran durumu ve kulaklık/mixer dönüşü kaydedilecek. Uyumsuz USB yerine sessizce telefon mikrofonuna geçilmeyecek.
+Gecikme: analog girişten analog çıkışa loopback ölçümü; ortanca, %95 ve en kötü değer raporu. Tampon süresi ya da uygulama göstergesi toplam gecikme sayılmaz. FX için ≤10 ms tercih, ortanca ≤15 ms ve %95 ≤20 ms koşullu ilk değerlendirme; hissedilen çalım gecikmesi ayrıca değerlendirilir. Bunlar önerilen proje hedefleridir, ölçülmüş sonuç veya evrensel standart değildir. Synth takip gecikmesi ayrıca raporlanacak.
+Kabul: 30 dakika temiz USB ve üç canlı efekt; yanlış route, kesinti, clipping, başlangıç/bitirişte patlama olmaması. Kalıcı başarısızlıkta önce bağlantı/cihaz yolunu düzelt; geniş efekt yatırımı durdurulur. USB iRig satın alma kararı bu sonuçlara göre; aynı test iRig modeli üzerinde tekrar yapılır.
+
+2 — KÜÇÜK CANLI PEDAL PAKETİ / ÖNERİ
+Tek ortak yerel C++ DSP sözleşmesi: başlat/reset, desteklenen örnekleme hızları, blok işleme, parametre yumuşatma, bypass, latency bildirimi, dry/wet. Ses callback'inde kilit, dosya okuma, bellek ayırma veya ağ işi olmayacak. Model değişimi hazırlık iş parçacığında, kontrollü geçişle uygulanacak.
+İlk ek grup: overdrive/fuzz, envelope filter, chorus, delay ve reverb. Önce az sayıda doğrulanmış motor; bas dry blend ve alt frekanslar korunacak. Airwindows MIT çekirdeği/DaisySP modülleri kaynak ve lisans incelemesiyle aday; tüm koleksiyon tek seferde aktif edilmeyecek. Mevcut özgün algoritmalar karşılaştırma tabanı olabilir.
+Kabul: ortak dosyadaki altı sıranın ve parametrelerin native motorda aynı uygulanması; sessizlik/bypass/null, sınır değer/NaN, örnekleme hızı, DC/clipping ve sıra kontrolleri. Ardından gerçek DI kaydıyla seviye eşit A/B ve dinleme. Altı pedalda CPU, xrun ve ısınma raporu.
+Kategoriler: Dinamik; EQ/Filtre/Wah; Drive/Fuzz; Modülasyon; Delay; Reverb; Pitch/Octave; Synth; Amfi; Kabin/IR; Akustik/Utility. Her girdide enstrüman, kaynak sürümü/commit, lisans, gerçek model/özgün algoritma ayrımı, canlı destek ve işlem yükü etiketi. Araştırılmış/port edilmiş/cihazda doğrulanmış/sahne kabulü ayrı durumlar.
+
+3 — GERÇEKÇİ AMFİ VE KABİN / ÖNERİ
+NAM Core ile .nam model yükleme, ayrı izinli model dosyaları ve ölçülmüş kabin IR'leri. Model/IR boyutu, kanal, sample rate, dosya doğrulama ve bellek sınırları. Lisanssız capture veya IR'leri uygulamayla dağıtma yok. Ücretsiz indirme, yeniden dağıtım izni demek değildir.
+Convolution için MIT aday motor değerlendirmesi; partition/IR uzunluğu/latency/CPU ölçülür. NAM mimari/model başına benchmark ve ses karşılaştırması. NAM'i chorus/delay/reverb/nota takibi yerine kullanmayacağız. Profil başlangıç ayarları kullanıcı tarafından değiştirilebilir; bas/elektro/akustik/klasik aynı Hz sınırına hapsedilmez.
+Kabul: model ve IR uyumlu yükleme, gerçek DI ile referansa karşı ölçüm ve seviye eşit kör dinleme; altı pedal + amfi/IR yükünde en az 60 dakika cihaz testi. Bir cihazda geçen model bütün cihazlar için otomatik geçmez.
+
+4 — GR TARZI ÇALGI DÖNÜŞÜMÜ / AYRI PROTOTİP
+Temiz bas dalı fiziksel/dijital drive, octaver, chorus ve reverb'den ÖNCE alınır. Ayrım gerekiyorsa uygun buffer/DI çözümü değerlendirilir. Rastgele pasif Y kablosu varsayılmaz. Note/onset/şiddet/confidence → note-on/off/pitch-bend → çok örnekli ses motoru.
+İlk sürüm tek sesli bas: 4/5 tel, düşük B/E, farklı manyetik/seviye, parmak/pena/slap, muting, hızlı geçişler ve slide/bend test matrisi. Güven düşükse yeni yanlış nota üretmek yerine kontrollü sustur/önceki notayı bırak. Asılı nota/çift tetik, oktav hatası, kaçan nota ve nota başlangıcından ses çıkışına gecikme ayrı kaydedilir. Sabit bir düşük gecikme sözü yok; kabul çalım verisine bağlı.
+Piyano için şiddet katmanları ve bırakma sesleri; klarnet/saksafon için legato, ifade, vibrato ve doğal atak. FluidSynth Android/SoundFont adayı; LGPL yükümlülükleri, bağımlılıklar ve örnek bankası izinleri ayrı değerlendirilecek. CC0 VCSL/VSCO kaynak adayları kalite garantisi değildir. Saksafon için yüksek kaliteli izinli kayıt seçimi veya özel kayıt gerekebilir; jenerik synth dalgasına gerçekçi çalgı adı verilmez.
+Roland GR-55'in 13 pin GK gerektiren ayrı tel yaklaşımının sıradan mono jack ile eşdeğeri vaat edilmez. Roland ROM, kod ve sample'ları kopyalanmaz. GK/harici MIDI ileride alternatif; GR-55 USB audio Android uyumluluğu doğrulanmış değildir. Akor/polifoni yalnız ayrı araştırma ve kabul sonrası.
+Kabul: gerçek bas kayıtları ve canlı çalım üzerinde yanlış/kaçan/çift/asılı nota ölçümleri; müzisyenin piyano ve nefeslileri seviye eşit karşılaştırmayla kabulü. Önce MIDI olay üretimini sampler'dan ayrı doğrula, sonra uçtan uca sesi değerlendir. Başarısız tracking'i pahalı sample bankasıyla gizlemeyeceğiz.
+
+5 — GENİŞ KATALOĞU VE PLATFORMLARI TAMAMLA / ÖNERİ
+Airwindows aday havuzunu lisans, enstrüman yararı, CPU ve ses kalitesi sırasına göre partiler halinde ekle. Aynı işlevin birçok sürümü kullanıcıyı yormasın; arama, kategori, favori ve uygun varsayılanlar. Ticari pedal adı birebir klon kanıtı sayılmaz.
+Windows için yerel canlı ses motoru ve uygun düşük gecikmeli sürücü yolu; MIDI ayak kontrolü, preset geçişi, fiziksel kuru/bypass sahne alternatifi. Tablet gerçek cihaz testi. Hesap/senkronizasyon daha sonra; canlı çalım internet bağlantısına bağımlı olmayacak. Google Play imzası, 16 KB, hedef SDK, izin/gizlilik ve mağaza kuralları yayın tarihindeki resmi kurallarla yeniden doğrulanacak.
+Kabul: desteklenen cihaz matrisi, altı pedal+amfi/IR/sampler ayrı ağır yükler, 60 dakika sahne provası, kullanıcı kaydı/geri dönüş/güncelleme kontrolleri. Kaynak kodun gizli kalması tercihine uygun motor/bağımlılık lisansları seçilecek.
+
+ŞİMDİKİ DAR SONRAKİ ADIM
+Mevcut bağlantı testi ekranını kullanarak Duo+Redmi donanım kabul tutanağını doldurmak ve analog loopback ölçümünü yapmak. Donanım testi mümkün olana kadar kaynak/lisans envanteri, porting tasarımı ve offline CPU/kalite hazırlığı ilerleyebilir. Bunlar gerçek ses veya sahne kabulü yerine geçmez. Takvim ve ilk iRig modeli ölçümden sonra kesinleşir.
+
+BAŞLICA KAYNAKLAR
+M-Audio bağlantı/monitör: https://www.m-audio.com/audio-midi-interfaces/m-track-duo.html
+https://support.m-audio.com/en/support/solutions/articles/69000856587-m-audio-m-track-duo-solo-registration-set-up-guide
+Android: https://developer.android.com/games/sdk/oboe/low-latency-audio
+iRig USB: https://www.ikmultimedia.com/products/irigusb/index.php?p=specs
+Roland GK: https://support.roland.com/hc/en-us/articles/28672549950747-GR-55-Can-I-Connect-a-Guitar-Without-a-GK-Pickup
+Airwindows: https://github.com/baconpaul/airwin2rack#readme
+NAM: https://github.com/sdatkinson/NeuralAmpModelerCore/blob/main/LICENSE
+FluidSynth: https://www.fluidsynth.org/wiki/LicensingFAQ/
+
+Future Impact referansı: Panda Audio'nun mevcut V4/V4.5 ürünü bas synth/MIDI genişletici olarak VA/FM ve pitch tracking özellikleri sunar. Bunu piyano/klarnet/saksafonun çok örnekli çalgı yolundan ayrı değerlendireceğiz. Kendi VA/FM katmanımız için osilatör, filtre, envelope, modülasyon ve ifade kontrolü araştırılır; Panda firmware/preset kodunun uygulamaya gömülebilir lisansı varsayılmaz. Kaynak: https://www.panda-audio.com/future-impact-v4
+Sample formatı: VCSL/VSCO'nun SFZ/WAV içerikleri FluidSynth'in SF2/SF3 formatına doğrudan yüklenmez. Dönüştürme veya uygun oynatıcı seçimi sırasında şiddet katmanı, loop/release ve artikülasyonların kaybı kontrol edilir. Motor ve banka seçimi birlikte prototiplenir; saksafon için kaynak ve kalite kararı açık kalır.

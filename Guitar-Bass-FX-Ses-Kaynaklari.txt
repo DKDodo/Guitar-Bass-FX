@@ -1,0 +1,83 @@
+Guitar & Bass FX — Ses kaynakları aday envanteri
+9 Ekim 2026 | Birincil kaynak doğrulaması
+
+Durum: Araştırma adayı. Bu dosya hiçbir yeni efektin uygulamaya entegre edildiğini veya Redmi/sahne testinden geçtiğini iddia etmez.
+Kaynak özeti ile mühendislik çıkarımı JSON dosyasında ayrı alanlarda yer alır.
+
+Airwindows: 525 benzersiz işlemci adayı, resmi CMake + registry eşleşmesi; commit 9b871163678d26bde17c7d258b14d37187f942a3. Tekrar/eksik dosya çifti 0. Önceki sürümler ve stüdyo araçları dahildir.
+Tam aday listesi: Guitar-Bass-FX-Airwindows-Adaylari.csv
+
+Kaynak | Kategori | Lisans | Android/kalite kararı
+--- | --- | --- | ---
+Airwindows / airwin2rack airwin-registry | EQ/filtre, dinamik, drive/fuzz | MIT: yalnız çekirdek, src, libs/airwindows ve belirtilen belge kapsamı | A: ilk efekt paketi; port ve canlı kalite henüz kabul edilmedi.
+DaisySP MIT çekirdeği | envelope/wah, chorus/flanger/phaser/tremolo, overdrive | MIT; DaisySP-LGPL alt bileşenleri bununla aynı değil | A: ilk efekt/synth paketi; port ve canlı kalite henüz kabul edilmedi.
+NeuralAmpModelerCore | amfi/preamp capture, drive karakteri/model | MIT çekirdek; Eigen ve diğer bağımlılıklar ayrıca denetlenmeli | B: amfi doğrulaması; port ve canlı kalite henüz kabul edilmedi.
+HiFi-LoFi FFTConvolver | ölçülmüş kabin IR, konvolüsyon reverb | MIT; opsiyonel FFTW gibi hızlandırıcıların lisansı ayrı | B: gerçek IR kabin; port ve canlı kalite henüz kabul edilmedi.
+chowdsp_wdf | devre tabanlı filtre/drive/preamp | BSD-3-Clause | C: ileri devre modelleme; port ve canlı kalite henüz kabul edilmedi.
+Cycfi Q pitch/DSP çekirdeği | monofonik nota takibi, onset/envelope, MIDI olaylarına dönüştürme altyapısı | MIT: mevcut master LICENSE; alınacak revision ve dosya başlıkları pinlenmeli | B: GR tarzı tek ses prototipi; port ve canlı kalite henüz kabul edilmedi.
+FluidSynth | SoundFont sample oynatıcı, MIDI synth | LGPL-2.1; kapalı kaynak dağıtım için relink/değiştirme ve bildirim koşulları çözülmeli | B: koşullu sampler pilotu; port ve canlı kalite henüz kabul edilmedi.
+sfizz çekirdek | SFZ sample oynatıcı, çok katmanlı/artikülasyonlu enstrüman | BSD-2-Clause çekirdek; bağımlılıklar ayrı | C: bakım koşullu alternatif; port ve canlı kalite henüz kabul edilmedi.
+VCSL Keys | piyano sample bankası, klavsen | CC0 bankası: resmi üretici açıklaması | B: piyano aday bankası; port ve canlı kalite henüz kabul edilmedi.
+VSCO 2 Community Edition | klarnet/orkestra sample bankası | CC0: yalnız resmi CE ham WAV/SFZ içeriği; türev paketlerin ek örnekleri aynı varsayılmaz | B: klarnet; saksafon bekliyor; port ve canlı kalite henüz kabul edilmedi.
+Spotify Basic Pitch | polifonik audio-to-MIDI araştırması, kayıttan nota çıkartma | Apache-2.0 kod; seçilen model/dosya/dependency kapsamı ayrıca kaydedilmeli | D: polifonik araştırma; port ve canlı kalite henüz kabul edilmedi.
+Surge XT | kapsamlı hybrid synth, synth efektleri | GPL-3.0 ana kaynak; paketleme lisansı ve bağımlılıklar ayrı | D: referans/koşullu aday; port ve canlı kalite henüz kabul edilmedi.
+
+Kısa kararlar:
+• İlk efekt paketi: MIT/BSD çekirdekler, küçük ve gerçek girişte doğrulanan portlar. Overdrive/fuzz/envelope/chorus/delay/reverb ayrı kabul hedefleri.
+• Amfi: NAM Core + dağıtım hakkı açık modeller. Kabin: FFTConvolver + dağıtım hakkı açık IR. NAM, chorus/delay veya GR-55 dönüşümünün yerine geçmez.
+• GR tarzı ilk prototip: temiz bas girişi → monofonik nota/atak/velocity/bend → gerçek sample bankası. Q aday; hiçbir Redmi düşük nota/takip sonucu ölçülmedi.
+• Piyano VCSL Keys, klarnet VSCO CE aday. İncelenen resmi VSCO ham WAV ağacında sax adı bulunmadı; saksafon bankası hâlâ araştırma/izin işi.
+• FluidSynth Android yolu mevcut; LGPL dağıtım koşulları çözülmeli. SFZ doğrudan SF2 değildir. sfizz BSD2 ama ana depo arşivli; bakım planı olmadan üretim tercihi yapılmasın.
+• Polifonik Basic Pitch dosya transkripsiyonu için aday; düşük gecikmeli sahne motoru olarak kabul edilmedi. Jam Origin MIDI Bass ticari referans ve şimdilik tek sesli.
+• Kod MIT/BSD olsa bile model, IR ve sample hakları ayrı. Kapalı kaynak ürün için GPL synth/efekt çekirdekleri doğrudan alınmasın.
+
+Kaynak bağlantıları:
+Airwindows / airwin2rack airwin-registry
+  https://github.com/baconpaul/airwin2rack#the-library-version
+  https://github.com/baconpaul/airwin2rack#a-note-on-licensing
+  https://github.com/baconpaul/airwin2rack/blob/9b871163678d26bde17c7d258b14d37187f942a3/src/ModuleAdd.h
+  https://github.com/airwindows/airwindows/blob/master/LICENSE
+DaisySP MIT çekirdeği
+  https://github.com/daisyaudio/DaisySP
+  https://github.com/daisyaudio/DaisySP/blob/master/LICENSE
+  https://github.com/daisyaudio/DaisySP/releases/tag/V1.0.0
+  https://github.com/daisyaudio/DaisySP/blob/master/CMakeLists.txt
+NeuralAmpModelerCore
+  https://github.com/sdatkinson/NeuralAmpModelerCore
+  https://github.com/sdatkinson/NeuralAmpModelerCore/blob/main/LICENSE
+  https://github.com/sdatkinson/NeuralAmpModelerCore/blob/main/README.md
+HiFi-LoFi FFTConvolver
+  https://github.com/HiFi-LoFi/FFTConvolver
+  https://github.com/HiFi-LoFi/FFTConvolver/blob/non-uniform/COPYING.txt
+  https://github.com/HiFi-LoFi/FFTConvolver/blob/non-uniform/AudioFFT.h
+chowdsp_wdf
+  https://github.com/Chowdhury-DSP/chowdsp_wdf
+  https://github.com/Chowdhury-DSP/chowdsp_wdf/blob/main/LICENSE
+Cycfi Q pitch/DSP çekirdeği
+  https://github.com/cycfi/q
+  https://github.com/cycfi/q/blob/master/LICENSE
+  https://github.com/cycfi/q/blob/master/q_lib/include/q/pitch/pitch_detector.hpp
+  https://cycfi.github.io/q/q/v1.5-dev/reference/pitch.html
+  https://github.com/cycfi/q/blob/master/docs/modules/ROOT/pages/reference/pitch/pitch_detector.adoc
+FluidSynth
+  https://github.com/FluidSynth/fluidsynth/blob/master/LICENSE
+  https://www.fluidsynth.org/wiki/LicensingFAQ/
+  https://www.fluidsynth.org/wiki/Using-prebuilt-libraries-on-Android/
+sfizz çekirdek
+  https://github.com/sfztools/sfizz
+  https://github.com/sfztools/sfizz/blob/develop/LICENSE
+VCSL Keys
+  https://versilian-studios.com/vcsl-keys/
+VSCO 2 Community Edition
+  https://versilian-studios.com/vsco-community/
+  https://github.com/sgossner/VSCO-2-CE/tree/master/Woodwinds/Clarinet
+  https://github.com/sgossner/VSCO-2-CE/blob/master/LICENSE
+Spotify Basic Pitch
+  https://github.com/spotify/basic-pitch
+  https://github.com/spotify/basic-pitch/blob/main/LICENSE
+  https://github.com/spotify/basic-pitch/blob/main/README.md
+Surge XT
+  https://github.com/surge-synthesizer/surge
+  https://github.com/surge-synthesizer/surge/blob/main/LICENSE
+  https://github.com/surge-synthesizer/surge/blob/main/README.md
+  https://www.jamorigin.com/products/midi-bass/
