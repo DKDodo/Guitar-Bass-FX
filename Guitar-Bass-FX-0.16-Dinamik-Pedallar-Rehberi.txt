@@ -1,0 +1,33 @@
+GUITAR & BASS FX — ANDROID 0.16 KOMPRESÖR / GATE REHBERİ
+9 Ekim 2026
+
+Telefon: 0.16.0-live-dynamics-preview. Windows: 0.6.
+
+NASIL KULLANILIR?
+Pedalboard'da herhangi bir yuvaya Kompresör, Gate veya 3 bant EQ ekle. Parametreler ve bypass yerel otomatik kayıtta saklanır. Canlı ekranı ana ekrandaki Canlı çal · USB veya Pedalboard → Düzen → Canlı çal · USB ile aç. Aşağı kaydırınca düzen adı, enstrüman, altı yuva ve kayıtlı ayarlar görünür. Düzeni düzenle ile geri dön; değişikliği kaydedip yeniden canlıya gir. Kayıtlı düzeni yenile yalnız ses dururken kullanılabilir.
+Bu üç model birlikte, tekrarlı olarak ve altı yuvanın herhangi bir sırasıyla canlı motorda çalışır. Diğer 8 pedal modeli ve amfi/kabin henüz canlı değildir; açık olduklarında Başlat kapalıdır, gerekli bypass ekranda açıklanır. Uygulama bunları kendiliğinden atlamaz veya düzenini değiştirmez. Boş/tam bypass düzen temiz aktarım verir.
+
+KOMPRESÖR
+Eşik -48..-6 dB; oran 2:1..12:1; atak 1..50 ms; bırakma 20..500 ms; kazanç telafisi 0..12 dB; temiz/efekt karışımı %0..100.
+Güçlü vuruşların seviyesini azaltır; atak ve bırakma tepkiyi düzenler. Bu uygulama yumuşak 6 dB geçiş bölgesi kullanır. Telafi işlenmiş sese uygulanır; %0 karışım temiz sesi korur. Telafiyi artırmak çıkışta taşma yaratabilir; giriş/çıkış göstergelerini izle. Sahne için otomatik limiter veya gerçek donanım modelinin birebir emülasyonu değildir.
+
+GATE
+Eşik -72..-6 dB; açılma 1..30 ms; bekleme 0..300 ms; kapanma 20..600 ms; kapalıyken azaltma 6..80 dB.
+Sessiz bölümlerde düşük seviyeli gürültüyü azaltır. Kapanma eşiği açılma eşiğinden 6 dB düşüktür; bekleme ve yumuşak kapanma sürekli aç/kapa davranışını azaltır. Eşiği fazla yükseltmek veya süreleri çok kısaltmak sessiz çaldığın notaların kuyruğunu kesebilir. Kapalıyken azaltma tamamen sessizleştirme yerine ayarlanabilir taban seviyesi verir. Demo karşılaştırmasındaki yapay gürültü canlı girişe eklenmez.
+
+SIRA VE ENSTRÜMAN
+Gate → kompresör → EQ ile başka bir sıra aynı sonucu vermeyebilir; her pedal önündeki pedalın çıkışını dinler. Bas/elektro/akustik/klasik profil dosyadan gelir; EQ başlangıç noktaları önceki sürümle aynıdır. Kompresör ve gate genliği izler; enstrümanın frekans aralığını kesen gizli filtre veya enstrümana göre zorlanan örnekleme hızı eklenmedi.
+
+BAĞLANTI
+Bas/gitar → USB gitar arayüzünün enstrüman girişi → telefon → işlenmiş USB dönüşü → arayüz çıkışı → kulaklık veya uygun mixer girişi. Direct Monitor/THRU temiz donanım yolunu verebilir; işlenmiş dönüşü dinle. M-Track Duo ve küçük USB-C arayüzlerin gerçek Redmi/USB ses uyumu henüz kabul edilmedi. Küçük aparat da ses dönüştürücüdür; yalnız kablo enstrüman sinyalini dijital sese dönüştürmez. Fiziksel pedalboardda arayüz çıkış türü ve pedal giriş seviyesi ayrıca doğrulanacak. Ayrıntılı bağlantı planı .14/.15 rehberlerindedir.
+Giriş azaltma başlangıç -6 dB, çıkış %25. Cihaz giriş/çıkış düzeyleri ve USB seçimi ortak ton dosyasına eklenmez. Giriş azaltma fiziksel gain'in yerine geçmez; zaten taşmış sinyali onaramaz. Başlat elle kullanılır ve ses alma izni gerekir. Cihaz yoksa Başlat kapalıdır. USB kopması, ekrandan ayrılma veya ses önceliği kaybı aktarımı durdurur; mikrofon/hoparlöre fallback ve otomatik yeniden başlama yoktur.
+Canlı oturum yüklenen kaydın sabit kopyasını kullanır. Düzenleyiciye dönmek sesi durdurur; değişiklik yeni başlangıçla uygulanır. Ses kartı testi temiz tanılamayı, Teknik ayrıntılar → Bağımsız EQ denemesi eski EQ ekranını korur.
+
+DURUM
+Yazılım ve kendi uygulama ekran kontrolleri tamamlandı; mevcut kayıt biçimi ve kayıtlar korundu. Gerçek gitar/bas sesi, işitsel kalite, analog gecikme, cihaz CPU/ısı/güç, tablet ve uzun sahne kabulü bekler. Gate/kompresör ek işlem tamponu veya lookahead kullanmaz; bu toplam sistem gecikmesinin sıfır olduğu anlamına gelmez.
+
+ARAŞTIRMA
+Kontrol davranışları için üretici belgeleri incelendi; kullanılan DSP kendi Java demo motorumuzun özgün native uyarlamasıdır:
+https://www.fabfilter.com/help/pro-g/using/timecontrols
+https://www.fabfilter.com/help/pro-c/using/dynamicscontrols
+https://developer.android.com/games/sdk/oboe/low-latency-audio
