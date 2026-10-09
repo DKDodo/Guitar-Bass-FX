@@ -16,18 +16,18 @@ ZIP'i bir klasöre çıkarıp `BasSahnePC.exe` ile aç. Java ayrıca kurulmaz. M
 
 ## Mevcut önizleme
 
-- Dört enstrüman profili ve altı yuvalı yerel pedalboard düzenleme. Android 0.12 boş yuvadaki “+ Pedal ekle” ile doğrudan seçim ve ayarlara geçiş sağlar.
+- Dört enstrüman profili ve altı yuvalı yerel pedalboard düzenleme. Android 0.13 altı renkli kartı birlikte gösterir; yalnız seçilen pedalın ayarları ayrı panelde açılır. Düğmeyle parametre düzenleme, sabit Dinle/Bitti ve Düzen menüsü ekranı sadeleştirir.
 - 11 pedal modeli: EQ, kompresör, overdrive, chorus, delay, oda reverb, Gate, Fuzz, Auto-wah ve Synth VA/FM.
 - Altı yuvadan bağımsız 7 özgün amfi karakteri ve 4 algoritmik kabin; parametre, bypass ve zincirdeki yer seçimi.
 - Tek pedal veya bütün düzen için 2,7 saniyelik üretilmiş ses örneği. Gate demosu bypass ile kıyaslamak için örnek gürültü içerir.
-- Windows 0.6 / Android 0.12 arasında elle ortak v2 dosya aktarımı; eski v1/v2 dosyaları açılır. Yeni Gate/Fuzz/Auto-wah modelleri için bu yeni sürümler gerekir; önceki Windows 0.5/Android 0.10 bu modelleri tanımaz.
+- Windows 0.6 / Android 0.13 arasında elle ortak v2 dosya aktarımı; eski v1/v2 dosyaları açılır. Yeni Gate/Fuzz/Auto-wah modelleri için bu yeni sürümler gerekir; önceki Windows 0.5/Android 0.10 bu modelleri tanımaz.
 - Manuel başlatılan kromatik akort: nota, Hz, sent, pes/tiz göstergesi.
 - Windows için GitHub güncellemeleri.
 - Android telefon ve tablet ekranlarına uyarlanan arayüz.
 
 Bu bir geliştirme önizlemesidir. Efekt/amfi/kabin motoru kısa örnek sesi işler; yeni DSP canlı USB yoluna henüz bağlanmadı. Amfiler ticari modellerin birebir kopyası değildir; kabinler ölçülmüş IR kaydı kullanmaz. Gerçek enstrümanla karşılaştırmalı dinleme, ses kartı ölçüm doğruluğu ve sahne kabulü bekler. Canlı zincir, gerçekçi piyano/saksafon/klarnet dönüşümü, üyelik ve otomatik eşitleme sonraki adımlardır.
 
-[Güncel telefon pedalboard rehberi](Guitar-Bass-FX-0.12-Pedalboard-Rehberi.txt) · [Yeni pedal paketi kullanım rehberi](Guitar-Bass-FX-0.11-Pedal-Paketi-Rehberi.txt) · [Amfi ve kabin rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
+[Güncel telefon pedalboard rehberi](Guitar-Bass-FX-0.13-Pedalboard-Rehberi.txt) · [Yeni pedal paketi kullanım rehberi](Guitar-Bass-FX-0.11-Pedal-Paketi-Rehberi.txt) · [Amfi ve kabin rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
 
 ## İsim geçişi
 

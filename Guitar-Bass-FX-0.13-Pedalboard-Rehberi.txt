@@ -1,0 +1,30 @@
+GUITAR & BASS FX — ANDROID 0.13 PEDALBOARD REHBERİ
+9 Ekim 2026
+
+Telefon sürümü: 0.13.0-board-preview. Bilgisayar sürümü: 0.6.
+
+ANA EKRAN
+Pedalboard'u aç. Altı renkli pedal yuvası telefonda iki satır halinde birlikte görünür. Boş karttaki + işaretine dokun, listeden pedal seç. Dolu pedalın gövdesine dokunduğunda yalnız o pedalın ayar paneli açılır.
+Pedalın altındaki Açık/Bypass düğmesiyle açıp kapat. Pedalın ayarları ve yeri korunur.
+
+AYAR PANELİ
+Yuvarlak düğmeleri yukarı/aşağı sürükleyerek değer değiştir; değeri üstündeki yazıdan takip et. Tarama yönü ve filtre türü gibi iki seçenekli ayarlar düğmeyle değiştirilir. Klavye ve Android erişilebilirlik değer değiştirme işlemleri de desteklenir.
+Pedalı değiştir ile başka model seç veya Boş yuva ile kaldır. Sola/Sağa taşı ile sırayı değiştir; pedalın ayarları birlikte taşınır. Pedalı dinle yalnız bu pedalın 2,7 saniyelik demosunu çalar. Dinleme ve Bitti düğmeleri panelin altında kalır; çok ayarı olan modelde yalnız iç ayarlar kaydırılır.
+Bitti veya geri ile ana pedalboard'a dön.
+
+AMFİ VE KABİN
+Ana ekrandaki Amfi veya Kabin düğmesine dokun. Model, bypass ve ayarlar ayrı panelde açılır. Altı pedal yuvasından yer kullanmaz. Amfiyi/Kabini dinle yalnız seçtiğin bölümü duyurur.
+Zincirdeki yer ile amfi ve kabinin kaçıncı pedaldan sonra çalışacağını seç. Düzeni dinle tüm açık pedalları, amfi ve kabini kaydedilen sırayla birlikte duyurur.
+
+DÜZEN MENÜSÜ
+Düzen menüsünde Adı değiştir, Başlangıç önerisi, Dosyadan aç, Dosyaya aktar ve Yeni düzen bulunur. Enstrüman seçimi ana ekranda kalır. Adı değiştir ekranında Vazgeç, yazdığın adı kaydetmez.
+Yerel değişiklikler otomatik saklanır. Dosyaya aktar/Dosyadan aç ile bilgisayar ve telefon arasında ortak şema 2 JSON dosyası elle taşınır. Yeni düzen mevcut yerel taslağın yerine geçtiğinden önce dışa aktararak saklayabilirsin.
+
+KATALOĞUN KORUNMASI
+11 pedal, 7 özgün amfi karakteri, 4 algoritmik kabin ve dört enstrüman profili korunur. Bu sürüm telefonun görünümünü sadeleştirir; ses motoru, dosya şeması ve Windows 0.6 değişmez. Önceki v1/v2 dosyaları açılır. Amfiler ticari cihazların birebir kopyası, kabinler ölçülmüş IR değildir. Kısa örnek ses motorunun canlı USB zincirine bağlanması ayrı aşamadır.
+
+EKRAN UYARLAMASI
+Dar telefonda üç sütun/iki satır, geniş pencerede altı sütun, büyük yazı veya çok dar pencerede iki sütun kullanılır. Gerekirse ana ekran ve panel içi kaydırılır. Gerçek tablet cihaz denemesi henüz yapılmadı.
+
+DOĞRULAMA
+Redmi'ye mevcut uygulamanın üzerine aynı imzayla yüklendi; kullanıcı kaydı ve tercihler korundu. Telefonun kendi uygulama ekranlarında 380 kontrol geçti: altı yuva, 11 model, ayar paneli, sürükleme/iptal/klavye/erişilebilirlik, bypass, taşıma, amfi/kabin, isim iptali ve kayıt. Geçici test düzeni kullanıcı taslağından ayrıdır. Kullanıcı yeni görünüm için “Daha sade ve anlaşılır” yanıtını verdi.
