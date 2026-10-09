@@ -44,4 +44,4 @@ Android, Windows güncelleme kanalı üzerinden kurulmaz. Google Play yayını h
 
 Seçilen üçüncü vintage tema uygulandı: normal telefonda iki sütunlu altı pedal, ayrı aç/kapat ve kısa demo düğmeleri; sabit Pedallar/Tonlar/Akort/Menü sekmeleri. Menüde Düzenlerim, Amfi ve kabin, Bağlantı, Akort aleti, Ayarlar ve Yardım çalışan ekranlara bağlıdır. Düzenlerim mevcut yerel taslak ve elle dosya işlemlerini kullanır. Kartın yüzüne dokunmak ayrıntılı ayarları açar.
 
-Redmi: 497 pedalboard/menü + 310 canlı düzen/JNI + 41 EQ/JNI kontrolü geçti; giriş sesi açılmadı ve kullanıcı kayıtları korundu. Gerçek telefon görüntüleri incelendi. [Pedal Rafı rehberi](Guitar-Bass-FX-0.18-Pedal-Rafi-Rehberi.txt). Kullanıcı görünüm kabulü ve gerçek USB ses/gecikme/sahne/tablet kabulü bekler. Windows 0.6 sürümü sürer.
+Redmi: 497 pedalboard/menü + 310 canlı düzen/JNI + 41 EQ/JNI kontrolü geçti; giriş sesi açılmadı ve kullanıcı kayıtları korundu. Gerçek telefon görüntüleri incelendi. [Pedal Rafı rehberi](Guitar-Bass-FX-0.18-Pedal-Rafi-Rehberi.txt). Kullanıcı Redmi’de yeni düzenin rahat kullanıldığını doğruladı. Gerçek USB ses/gecikme/sahne/tablet kabulü bekler. Windows 0.6 sürümü sürer.
