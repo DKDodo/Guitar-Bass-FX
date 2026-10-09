@@ -20,15 +20,15 @@ ZIP'i bir klasöre çıkarıp `BasSahnePC.exe` ile aç. Java ayrıca kurulmaz. M
 - 11 pedal modeli: EQ, kompresör, overdrive, chorus, delay, oda reverb, Gate, Fuzz, Auto-wah ve Synth VA/FM.
 - Altı yuvadan bağımsız 7 özgün amfi karakteri ve 4 algoritmik kabin; parametre, bypass ve zincirdeki yer seçimi.
 - Tek pedal veya bütün düzen için 2,7 saniyelik üretilmiş ses örneği. Gate demosu bypass ile kıyaslamak için örnek gürültü içerir.
-- Windows 0.6 / Android 0.14 arasında elle ortak v2 dosya aktarımı; eski v1/v2 dosyaları açılır. Yeni Gate/Fuzz/Auto-wah modelleri için bu yeni sürümler gerekir; önceki Windows 0.5/Android 0.10 bu modelleri tanımaz.
-- Android 0.14 Canlı EQ · USB: giriş azaltma, dört profile göre üç bant EQ, bypass ve çıkış düzeyi. Ses arayüzü marka adına bağlı değildir; gerçek cihaz uyumluluğu ve gecikme kabulü bekler.
+- Windows 0.6 / Android 0.15 arasında elle ortak v2 dosya aktarımı; eski v1/v2 dosyaları açılır. Yeni Gate/Fuzz/Auto-wah modelleri için bu yeni sürümler gerekir; önceki Windows 0.5/Android 0.10 bu modelleri tanımaz.
+- Android 0.15 Canlı çal · USB: kayıtlı altı yuvadaki EQ sırası, ayarları ve bypass canlıya bağlıdır. Enstrüman profili kayıttan gelir. Diğer aktif pedallar ve amfi/kabin bu adımda başlangıcı bloklar; düzenleyicide bypass yapılması gerekir. Gerçek USB ses/uyumluluk/gecikme kabulü bekler.
 - Manuel başlatılan kromatik akort: nota, Hz, sent, pes/tiz göstergesi.
 - Windows için GitHub güncellemeleri.
 - Android telefon ve tablet ekranlarına uyarlanan arayüz.
 
-Bu bir geliştirme önizlemesidir. Pedalboard efekt/amfi/kabin motoru kısa örnek sesi işler; Android 0.14 bağımsız canlı giriş/EQ adımını ekler. Altı pedallı düzen ve amfi/kabin canlı USB yoluna henüz bağlı değildir; EQ ekranındaki oturum ayarları düzen dosyasına kaydedilmez. Amfiler ticari modellerin birebir kopyası değildir; kabinler ölçülmüş IR kaydı kullanmaz. Gerçek enstrümanla karşılaştırmalı dinleme, ses kartı ölçüm doğruluğu ve sahne kabulü bekler. Canlı zincir, gerçekçi piyano/saksafon/klarnet dönüşümü, üyelik ve otomatik eşitleme sonraki adımlardır.
+Bu bir geliştirme önizlemesidir. Pedalboard efekt/amfi/kabin motoru kısa örnek sesi işler; Android 0.15 kayıtlı EQ pedalboardunu canlı USB yoluna bağlar. Diğer pedallar ve amfi/kabin canlı değildir. Cihaz/oturum giriş-çıkış düzeyleri ortak ton dosyasına yazılmaz. Amfiler ticari modellerin birebir kopyası değildir; kabinler ölçülmüş IR kaydı kullanmaz. Gerçek enstrümanla karşılaştırmalı dinleme, ses kartı ölçüm doğruluğu ve sahne kabulü bekler. Canlı zincir, gerçekçi piyano/saksafon/klarnet dönüşümü, üyelik ve otomatik eşitleme sonraki adımlardır.
 
-[Canlı EQ ve kompakt USB rehberi](Guitar-Bass-FX-0.14-Canli-EQ-Rehberi.txt) · [Telefon pedalboard rehberi](Guitar-Bass-FX-0.13-Pedalboard-Rehberi.txt) · [Yeni pedal paketi kullanım rehberi](Guitar-Bass-FX-0.11-Pedal-Paketi-Rehberi.txt) · [Amfi ve kabin rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
+[Kayıtlı canlı pedalboard rehberi](Guitar-Bass-FX-0.15-Canli-Pedalboard-Rehberi.txt) · [Telefon pedalboard rehberi](Guitar-Bass-FX-0.13-Pedalboard-Rehberi.txt) · [Yeni pedal paketi kullanım rehberi](Guitar-Bass-FX-0.11-Pedal-Paketi-Rehberi.txt) · [Amfi ve kabin rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
 
 ## İsim geçişi
 

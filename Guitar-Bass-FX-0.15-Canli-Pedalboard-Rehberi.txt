@@ -1,0 +1,27 @@
+GUITAR & BASS FX — ANDROID 0.15 CANLI PEDALBOARD REHBERİ
+9 Ekim 2026
+
+Telefon: 0.15.0-live-board-preview. Windows: 0.6.
+
+NASIL AÇILIR?
+Ana ekranda Canlı çal · USB düğmesine dokun. Pedalboard içindeki Düzen → Canlı çal · EQ seçeneği de aynı kayıtlı düzeni açar. Ses arayüzü bağlamadan ekranı inceleyebilirsin; cihaz yoksa Başlat kapalı kalır.
+Canlı ekranı aşağı kaydır: kayıtlı düzenin adı, enstrümanı, altı yuvası, EQ değerleri ve bypass durumu görünür. Düzeni düzenle ile pedalboarda dön. EQ ekle, Bas/Orta/Tiz değerlerini ve pedalın açık/kapalı durumunu değiştir. Yerel otomatik kayıt doğrulanınca yeniden canlı ekranı aç; en son kaydedilen düzen yüklenir. Kayıtlı düzeni yenile düğmesi ses dururken yeniden okur.
+
+BU SÜRÜMDE CANLI ÇALIŞANLAR
+Altı yuvanın herhangi birindeki Üç bant EQ, kayıtlı sıraya ve bypass durumuna göre canlı motora bağlandı. Birden fazla EQ kullanılabilir; son yuva da işlenir. Boş veya bypass yapılmış yuva ses işlemez. Açık EQ yoksa temiz USB aktarımı uygulanır.
+Bu adım yalnız EQ içindir. Diğer 10 pedal modeli ve amfi/kabin kısa demoda kullanılabilir; henüz canlı USB yoluna bağlanmadı. Bunlardan biri açıkken canlı Başlat kapalıdır ve ekranda hangi bölümün bypass yapılması gerektiği açıklanır. Program bunları kendiliğinden atlamaz veya düzenini değiştirmez. Düzenleyiciden bypass yaptıktan sonra kaydı yeniden açabilirsin.
+Kayıtlı enstrüman profili hem demo hem canlı EQ'nun başlangıç frekanslarını belirler:
+Bas gitar: 80 / 800 / 6000 Hz.
+Elektro gitar: 250 / 1500 / 6000 Hz.
+Akustik gitar: 160 / 1200 / 10000 Hz.
+Klasik gitar: 160 / 1000 / 7000 Hz.
+Bunlar ürün başlangıç tercihleridir; evrensel standart veya enstrümanın izin verilen frekans aralığı değildir. Basın alt frekanslarını kesen gizli filtre eklenmez. Açılan ses arayüzünün örnekleme hızı kullanılır; düşük hızda erişilemeyen EQ noktası güvenli sınıra indirilir ve ekran uygulanan Hz değerini gösterir.
+
+BAĞLANTI VE OTURUM
+Bas/gitar → USB arayüzünün enstrüman girişi → telefon → işlenmiş USB dönüşü → arayüz çıkışı → kulaklık veya uygun mixer girişi. İşlenmiş dönüşü dinle; Direct Monitor/THRU temiz donanım yolunu verebilir. M-Track Duo ve küçük USB-C gitar arayüzleri deneme adaylarıdır; belirli model/Redmi uyumu henüz gerçek sesle kabul edilmedi. Küçük aparat da bir ses dönüştürücüdür. Fiziksel pedalboard bağlantısında arayüz çıkış türü ve pedal giriş seviyesi ayrıca doğrulanır; Hall of Fame 2 → mixer 6,35 mm bağlantın için mixer/arayüz seviyeleri kontrol edilir.
+Başlat için ses alma izni gerekir. Seçilen USB giriş/çıkışı kullanılır; telefon mikrofonuna/hoparlörüne kendiliğinden geçilmez. Başlangıç giriş azaltma -6 dB, çıkış %25'tir. Giriş -24..0 dB arasında değişir; fiziksel gain ayarının yerini almaz ve daha önce taşmış girişi düzeltemez. EQ bantları -12..+12 dB'dir. Birden fazla yüksek artış kullanırken çıkış göstergesini izle; giriş/çıkış düzeyini veya EQ artışını azalt.
+Giriş/çıkış düzeyleri ve ses arayüzü seçimi bu ekranın cihaz/oturum ayarlarıdır; ortak ton dosyasına eklenmez. Canlı başlatma o anda yüklenmiş kaydın sabit kopyasını kullanır. Pedal değişikliği için düzenleyiciye dönmek sesi durdurur; son kayıt tekrar açılır ve Başlat elle kullanılır. Kayıtlı düzeni yenile ses çalışırken kapalıdır.
+Durdur, ekrandan ayrılma, USB kopması veya ses önceliği kaybı aktarımı durdurur. Kendi kendine yeniden başlamaz. Ses kaydı veya buluta ses/ton gönderimi eklenmedi. Ses kartı testi temiz tanılama yolunu korur; bu ekranın Teknik ayrıntılar bölümünde Bağımsız EQ denemesi eski oturum EQ ekranını açar.
+
+KABUL DURUMU
+Yazılım, paket ve kendi uygulama ekran kontrolleri geçti; kayıtlar korundu. Gerçek bas/gitar USB sesi, analog gecikme, işitsel kalite, güç/ısı/CPU, tablet ve uzun süreli sahne kabulü bekler. Tampon bilgisi ölçülmüş toplam gecikme değildir. Sonraki küçük yazılım adımı gate/kompresörü bu zincire eklemektir.
