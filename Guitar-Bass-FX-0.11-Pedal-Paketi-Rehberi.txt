@@ -1,0 +1,32 @@
+GUITAR & BASS FX — YENİ PEDAL PAKETİ
+9 Ekim 2026 · Android 0.11 / Windows 0.6
+
+NELER EKLENDİ?
+Gate: Sessiz aralarda düşük seviyeli gürültüyü azaltır. Eşik, açılma, bekleme, kapanma ve kapalıyken azaltma kontrolleri var.
+Fuzz: Daha yoğun, harmonikli distortion karakteri. Yoğunluk, asimetri, ton, temiz/efekt karışımı ve çıkış kontrolleri var.
+Auto-wah: Çalma şiddetine göre hareket eden envelope filter. Hassasiyet, başlangıç frekansı, tarama genişliği, rezonans, tepki ve geri dönüş; yukarı/aşağı yön, alçak geçiren/bant geçiren filtre ve temiz/efekt karışımı seçilir. Başlangıç Hz gösterimi seçilen enstrümana uyar.
+
+Katalog artık 11 model: 3 bant EQ, kompresör, overdrive, chorus, delay, oda reverb, Gate, Fuzz, Auto-wah, Synth VA ve Synth FM.
+Pedalboard 6 yuvalıdır; aynı modeli tekrar ekleyebilir veya yuvaları boş bırakabilirsin. Ayrı 7 amfi karakteri ve 4 algoritmik kabin önceki sürümden korunur.
+
+TELEFONDA İNCELEME
+Guitar & Bass FX → Pedalboard → bir yuva seç → Pedal değiştir → Gate/Fuzz/Auto-wah.
+Ayarları değiştirip Yuvayı dinle ile 2,7 saniyelik örneği dinle. Bypass ile karşılaştır. Düzeni dinle tüm açık pedalları ve amfi/kabini seçilen sırayla işler.
+Gate demosuna farkı duymak için örnek gürültü eklenir. Açık ve bypass aynı örnek kaynağını kullanır. Uygulama gerçek girişe bu demo gürültüsünü eklemez.
+Fuzz ve Auto-wah'ta karışım %0 temiz örnektir; oranı artırdıkça efektin payı artar. Basın gövdesini korumak için temiz payı artırabilirsin.
+Bas için örnek sıra: Gate → Auto-wah → Fuzz → Chorus → Delay → Oda reverb. Sıra bir başlangıç örneğidir; kendi tonuna göre değiştir. Amfi/kabin altı yuvadan sayılmaz.
+
+BİLGİSAYARDA İNCELEME
+Masaüstündeki Guitar & Bass FX kısayolunu aç. Yeni sürüm sağ üstte PC · 0.6.0 yazar. Önceden açık bir pencere eski sürümü göstermeye devam edebilir; kısayol yeni sürümü açar.
+Bir kart seç → Pedal değiştir → yeni model seç. Sağdaki kontrolleri düzenle; aşağıdaki Yuvayı dinle ile tek pedalı, Düzeni dinle ile tüm zinciri dinle.
+Kaydet ile ayrı dosya sakla. Yeni örnek dosyayı Pedalboard aç ile açabilirsin: Guitar-Bass-FX-Ornek-Funk-Bas-Duzeni.json.
+
+DOSYA UYUMU
+Şema 2 korunur. Önceki v1/v2 düzenler yeni sürümde açılır.
+Gate, Fuzz veya Auto-wah içeren dosyalar Android 0.11 / Windows 0.6 gerektirir. Önceki Android 0.10 / Windows 0.5 bu model adlarını tanımaz; eski sürümle paylaşmak için bu pedalları desteklenen modellerle değiştirilmiş ayrı bir dosyaya kaydet.
+Telefon/bilgisayar aktarımı Dosyaya aktar ve Dosyadan aç ile elle yapılır; üyelik veya otomatik eşitleme henüz yok.
+
+BU SÜRÜMÜN SINIRI
+Yeni üç pedal kısa örnek sesi gerçekten işler. Örnek enstrüman kaynağı üretilmiştir; kayıtlı gerçek bas/gitar performansı değildir. Dinleme kalitesi henüz gerçek enstrümanla karşılaştırılmadı.
+Yeni DSP mevcut Ses kartı testi ekranındaki temiz USB yoluna henüz bağlanmadı. Gerçek bas/M-Track, gecikme ve sahne kabulü bekler. Bu sürüm donanım bağlamadan arayüz ve ses örneklerini incelemek içindir.
+Google Play yayını yapılmadı. Android APK, Windows güncelleme kanalıyla kurulmaz.

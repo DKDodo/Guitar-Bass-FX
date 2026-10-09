@@ -17,17 +17,17 @@ ZIP'i bir klasöre çıkarıp `BasSahnePC.exe` ile aç. Java ayrıca kurulmaz. M
 ## Mevcut önizleme
 
 - Dört enstrüman profili ve altı yuvalı yerel pedalboard düzenleme.
-- 8 pedal modeli: EQ, kompresör, overdrive, chorus, delay, oda reverb ve Synth VA/FM.
+- 11 pedal modeli: EQ, kompresör, overdrive, chorus, delay, oda reverb, Gate, Fuzz, Auto-wah ve Synth VA/FM.
 - Altı yuvadan bağımsız 7 özgün amfi karakteri ve 4 algoritmik kabin; parametre, bypass ve zincirdeki yer seçimi.
-- Tek pedal veya bütün düzen için 2,7 saniyelik üretilmiş ses örneği.
-- Windows 0.5 / Android 0.10 arasında elle ortak v2 dosya aktarımı; eski v1 dosyaları açılır. Yeni v2 dosyası eski Windows 0.4 ile açılmaz.
+- Tek pedal veya bütün düzen için 2,7 saniyelik üretilmiş ses örneği. Gate demosu bypass ile kıyaslamak için örnek gürültü içerir.
+- Windows 0.6 / Android 0.11 arasında elle ortak v2 dosya aktarımı; eski v1/v2 dosyaları açılır. Yeni Gate/Fuzz/Auto-wah modelleri için bu yeni sürümler gerekir; önceki Windows 0.5/Android 0.10 bu modelleri tanımaz.
 - Manuel başlatılan kromatik akort: nota, Hz, sent, pes/tiz göstergesi.
 - Windows için GitHub güncellemeleri.
 - Android telefon ve tablet ekranlarına uyarlanan arayüz.
 
 Bu bir geliştirme önizlemesidir. Efekt/amfi/kabin motoru kısa örnek sesi işler; yeni DSP canlı USB yoluna henüz bağlanmadı. Amfiler ticari modellerin birebir kopyası değildir; kabinler ölçülmüş IR kaydı kullanmaz. Gerçek enstrümanla karşılaştırmalı dinleme, ses kartı ölçüm doğruluğu ve sahne kabulü bekler. Canlı zincir, gerçekçi piyano/saksafon/klarnet dönüşümü, üyelik ve otomatik eşitleme sonraki adımlardır.
 
-[Amfi ve pedalboard kullanım rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
+[Yeni pedal paketi kullanım rehberi](Guitar-Bass-FX-0.11-Pedal-Paketi-Rehberi.txt) · [Amfi ve kabin rehberi](Guitar-Bass-FX-0.10-Amfi-Pedal-Rehberi.txt)
 
 ## İsim geçişi
 
